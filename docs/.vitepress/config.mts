@@ -48,18 +48,8 @@ export default defineConfig({
           { text: '教程首页', link: '/tutorial/' }
         ]
       },
-      {
-        text: '会员赞助',
-        items: [
-          { text: '会员赞助', link: '/sponsor/' }
-        ]
-      },
-      {
-        text: '更新日志',
-        items: [
-          { text: '更新日志', link: '/changelog/' }
-        ]
-      }
+      { text: '会员赞助', link: '/sponsor/' },
+      { text: '更新日志', link: '/changelog/' }
     ],
     search: {
       provider: 'local',
