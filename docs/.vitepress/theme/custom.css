@@ -40,9 +40,9 @@
 .VPHero .name { color: var(--vp-c-text-1); font-size: clamp(34px, 6vw, 56px); }
 .VPHero .text { color: var(--vp-c-brand-1); font-size: clamp(17px, 2.8vw, 24px); letter-spacing: 0.04em; }
 .VPHero .tagline { max-width: 600px; color: var(--vp-c-text-2); }
-.VPHero .image-container { transform: none; }
-.VPHero .image-bg { display: none; }
-.VPHero .image-src { max-width: 190px; border: 1px solid var(--vp-c-divider); border-radius: 12px; box-shadow: 0 18px 48px rgba(0, 0, 0, 0.14); }
+.VPHero .container { text-align: center; }
+.VPHero .main { max-width: 720px; margin: 0 auto; }
+.VPHero .actions { justify-content: center; }
 .VPButton { border-radius: 6px; transition: border-color .16s ease, background-color .16s ease, color .16s ease; }
 .VPButton.brand { border-color: var(--vp-c-brand-1); background-color: var(--vp-c-brand-1); }
 .VPButton.brand:hover { border-color: var(--vp-c-brand-2); background-color: var(--vp-c-brand-2); }
@@ -70,6 +70,20 @@
 .sponsor-card .price, .vip-card .price, .price { display: block; margin: 16px 0 10px; font-size: 22px; font-weight: 700; color: var(--vp-c-brand-1); letter-spacing: -.01em; }
 .vip-card { border-top: 3px solid var(--vp-c-brand-1); }
 .vip-card ul { margin: 12px 0 0; padding-left: 18px; }
+.vip-card.vip-tier { margin: 24px 0 34px; padding: 26px; }
+.vip-tier-header { display: flex; align-items: baseline; justify-content: space-between; gap: 18px; padding-bottom: 16px; border-bottom: 1px solid var(--vp-c-divider); }
+.vip-tier-header h3 { margin: 0; font-size: 22px; }
+.vip-tier-header .price { flex: none; margin: 0; }
+.vip-tier-content { display: grid; grid-template-columns: minmax(0, 1fr) minmax(220px, .8fr); gap: 28px; padding-top: 20px; }
+.vip-tier-content h4 { margin: 0 0 10px; font-size: 15px; }
+.vip-gift-placeholder { display: flex; min-height: 132px; align-items: center; justify-content: center; padding: 18px; border: 1px dashed var(--vp-c-divider); border-radius: 6px; color: var(--vp-c-text-2); background: var(--vp-c-bg-soft); text-align: center; }
+.vip-gift-list { margin-top: 18px; }
+.copy-qq { display: inline-flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 10px 0 4px; }
+.copy-qq button { border: 1px solid var(--vp-c-brand-1); border-radius: 6px; padding: 8px 12px; color: #fff; background: var(--vp-c-brand-1); font: inherit; font-size: 14px; cursor: pointer; transition: background-color .16s ease, border-color .16s ease; }
+.copy-qq button:hover { border-color: var(--vp-c-brand-2); background: var(--vp-c-brand-2); }
+.copy-qq-status { min-height: 1.5em; color: var(--vp-c-text-2); font-size: 13px; }
+.thanks-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 18px 0; padding: 0; list-style: none; }
+.thanks-grid li { padding: 11px 13px; border: 1px solid var(--vp-c-divider); border-radius: 6px; background: var(--vp-c-bg); font-weight: 600; }
 .notice, .warning, .info { margin: 20px 0; padding: 14px 16px; border: 1px solid var(--vp-c-divider); border-left: 3px solid var(--vp-c-brand-1); border-radius: 5px; background: var(--vp-c-bg-soft); }
 .warning { border-left-color: #b87a1c; }
 .info { border-left-color: #1769aa; }
@@ -82,14 +96,14 @@
 .not-found-code { margin: 0 0 10px; color: var(--vp-c-brand-1) !important; font-size: 72px; font-weight: 750; line-height: 1; }
 .not-found-actions { display: flex; gap: 12px; margin-top: 18px; }
 
-@media (max-width: 960px) {
-  .VPHero .image { display: none; }
-}
 @media (max-width: 640px) {
   .VPDoc .content-container { max-width: 100%; }
   .VPDoc h1 { font-size: 30px; }
   .sponsor-grid { grid-template-columns: 1fr; gap: 12px; }
   .sponsor-card, .vip-card { padding: 18px; }
+  .vip-card.vip-tier { padding: 18px; }
+  .vip-tier-header { align-items: flex-start; flex-direction: column; gap: 4px; }
+  .vip-tier-content { grid-template-columns: 1fr; gap: 20px; }
   .vp-doc div[class*='language-'] { margin-left: -4px; margin-right: -4px; border-radius: 5px; }
   .vp-doc table { display: block; width: max-content; min-width: 100%; overflow-x: auto; }
 }

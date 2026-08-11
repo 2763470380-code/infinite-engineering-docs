@@ -1,42 +1,89 @@
-# 赞助与支持
+# 会员赞助
 
-感谢每一位愿意支持无限工程长期运行的玩家。所有赞助项目、价格与权益以本页及下级页面的最终公告为准。
+## 赞助前请阅读
 
-::: info 赞助前请阅读
-当前页面展示的是维护用模板与内容结构，商品价格和具体发放流程尚未确定。请勿依据占位信息进行任何交易。
+所有等级赞助均为**永久赞助**。会员等级永久有效，并支持服务器后续周目继承对应永久权益。
+
+::: warning 会员物品使用说明
+任何赞助获得的商品、道具、礼包及专属物品，不得随意给予、转送或借给其他玩家使用。请共同维护公平、稳定、良好的服务器发展环境。
 :::
 
-## 支持方式
+## 联系腐竹
 
-<div class="sponsor-grid">
-  <article class="sponsor-card">
-    <h3>点券商城</h3>
-    <p>用于购买服务器内已开放的常规内容与服务。</p>
-    <a href="/sponsor/points">查看点券商城 →</a>
-  </article>
-  <article class="sponsor-card">
-    <h3>VIP 会员</h3>
-    <p>查看各等级会员的周期、权益与使用说明。</p>
-    <a href="/sponsor/vip">查看 VIP 会员 →</a>
-  </article>
-  <article class="sponsor-card">
-    <h3>单品赞助</h3>
-    <p>适用于单次购买的项目与特别支持内容。</p>
-    <a href="/sponsor/items">查看单品赞助 →</a>
-  </article>
-  <article class="sponsor-card">
-    <h3>鸣谢名单</h3>
-    <p>感谢对服务器发展作出支持的玩家与伙伴。</p>
-    <a href="/sponsor/thanks">查看鸣谢名单 →</a>
-  </article>
-</div>
+腐竹 QQ：`2602346931`
 
-## 处理说明
+<CopyQQButton />
 
-<div class="notice">
-  <strong>请保留凭证。</strong> 具体支付渠道、发放周期、退款与异常订单处理规则将在正式开放前公布。
-</div>
+## 黑铁VIP
 
-## 联系方式
+<section class="vip-card vip-tier">
+  <div class="vip-tier-header"><h3>黑铁VIP</h3><span class="price">¥ 38</span></div>
+  <div class="vip-tier-content">
+    <div><h4>VIP 权益</h4><ul><li>最大家数量 +3</li><li>黑铁VIP专属特效</li><li>黑铁VIP专属称号</li><li>黑铁VIP礼包</li></ul></div>
+    <div><div class="vip-gift-placeholder">VIP 礼包图片待补充</div><div class="vip-gift-list"><h4>VIP 礼包物品清单</h4><p>礼包物品清单待补充。</p></div></div>
+  </div>
+</section>
 
-如需就赞助相关问题进行核实，请联系腐竹 QQ：2602346931。请勿向非官方人员提供订单或账号信息。
+<!-- TODO: 黑铁VIP礼包图片：docs/.vitepress/public/vip/black-iron-vip.png -->
+
+## 青铜VIP
+
+<section class="vip-card vip-tier">
+  <div class="vip-tier-header"><h3>青铜VIP</h3><span class="price">¥ 68</span></div>
+  <div class="vip-tier-content">
+    <div><h4>VIP 权益</h4><ul><li>最大家数量 +5</li><li>传送无延迟</li><li>青铜VIP专属特效</li><li>青铜VIP专属称号</li><li>青铜VIP礼包</li></ul></div>
+    <div><div class="vip-gift-placeholder">VIP 礼包图片待补充</div><div class="vip-gift-list"><h4>VIP 礼包物品清单</h4><p>礼包物品清单待补充。</p></div></div>
+  </div>
+</section>
+
+<!-- TODO: 青铜VIP礼包图片：docs/.vitepress/public/vip/bronze-vip.png -->
+
+## 黄金VIP
+
+<section class="vip-card vip-tier">
+  <div class="vip-tier-header"><h3>黄金VIP</h3><span class="price">¥ 138</span></div>
+  <div class="vip-tier-content">
+    <div><h4>VIP 权益</h4><ul><li>最大家数量 +8</li><li>传送无延迟</li><li>黄金VIP专属特效</li><li>黄金VIP专属称号</li><li>黄金VIP礼包</li></ul></div>
+    <div><div class="vip-gift-placeholder">VIP 礼包图片待补充</div><div class="vip-gift-list"><h4>VIP 礼包物品清单</h4><p>礼包物品清单待补充。</p></div></div>
+  </div>
+</section>
+
+<!-- TODO: 黄金VIP礼包图片：docs/.vitepress/public/vip/gold-vip.png -->
+
+## 钻石VIP
+
+<section class="vip-card vip-tier">
+  <div class="vip-tier-header"><h3>钻石VIP</h3><span class="price">¥ 328</span></div>
+  <div class="vip-tier-content">
+    <div><h4>VIP 权益</h4><ul><li>最大家数量 +12</li><li>传送无延迟</li><li>传送无冷却</li><li>钻石VIP专属特效</li><li>钻石VIP专属称号</li><li>钻石VIP礼包</li></ul></div>
+    <div><div class="vip-gift-placeholder">VIP 礼包图片待补充</div><div class="vip-gift-list"><h4>VIP 礼包物品清单</h4><p>礼包物品清单待补充。</p></div></div>
+  </div>
+</section>
+
+<!-- TODO: 钻石VIP礼包图片：docs/.vitepress/public/vip/diamond-vip.png -->
+
+## 寰宇VIP
+
+<section class="vip-card vip-tier">
+  <div class="vip-tier-header"><h3>寰宇VIP</h3><span class="price">¥ 648</span></div>
+  <div class="vip-tier-content">
+    <div><h4>VIP 权益</h4><ul><li>最大家数量 +16</li><li>传送无延迟</li><li>传送无冷却</li><li>寰宇VIP专属特效</li><li>寰宇VIP专属称号</li><li>寰宇VIP礼包</li></ul></div>
+    <div><div class="vip-gift-placeholder">VIP 礼包图片待补充</div><div class="vip-gift-list"><h4>VIP 礼包物品清单</h4><p>礼包物品清单待补充。</p></div></div>
+  </div>
+</section>
+
+<!-- TODO: 寰宇VIP礼包图片：docs/.vitepress/public/vip/infinity-vip.png -->
+
+## 鸣谢名单
+
+感谢以下玩家对无限工程长期运营与发展的支持。
+
+<ul class="thanks-grid">
+  <li>huakai</li>
+  <li>Lucky_KingS</li>
+  <li>DustS</li>
+  <li>Rineeeeee</li>
+  <li>PKQ</li>
+  <li>XingH__</li>
+  <li>ice</li>
+</ul>

@@ -5,9 +5,6 @@ hero:
   name: 无限工程文档库
   text: INFINITE DOCUMENTATION
   tagline: Minecraft 1.21.1 科技 · 魔法 · 探索向长期服务器官方文档
-  image:
-    src: /site-icon.png
-    alt: 无限工程服务器头像
   actions:
     - theme: brand
       text: 开始阅读
@@ -33,10 +30,14 @@ features:
     details: 针对启动、联机、游戏机制与账号问题的快速解答。
     link: /faq/
     linkText: 查找答案 →
-  - title: 赞助与支持
-    details: 点券、会员、单品与鸣谢信息；所有支持均请先阅读说明。
+  - title: 会员赞助
+    details: 查看永久会员等级、对应权益、赞助说明与鸣谢名单。
     link: /sponsor/
-    linkText: 了解支持方式 →
+    linkText: 查看会员赞助 →
+  - title: 更新日志
+    details: 记录文档、服务器功能、玩法与问题修复的重要变化。
+    link: /changelog/
+    linkText: 查看更新日志 →
 ---
 
 ## 关于无限工程

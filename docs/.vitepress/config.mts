@@ -22,7 +22,8 @@ export default defineConfig({
       { text: '教程', link: '/tutorial/' },
       { text: '规则', link: '/rules/' },
       { text: '常见问题', link: '/faq/' },
-      { text: '赞助与支持', link: '/sponsor/' }
+      { text: '会员赞助', link: '/sponsor/' },
+      { text: '更新日志', link: '/changelog/' }
     ],
     // 仓库创建后取消注释并填入真实链接，VitePress 会将其显示在右上角。
     // socialLinks: [{ icon: 'github', link: 'https://github.com/你的组织/你的仓库' }],
@@ -48,13 +49,15 @@ export default defineConfig({
         ]
       },
       {
-        text: '赞助与支持',
+        text: '会员赞助',
         items: [
-          { text: '赞助说明', link: '/sponsor/' },
-          { text: '点券商城', link: '/sponsor/points' },
-          { text: 'VIP 会员', link: '/sponsor/vip' },
-          { text: '单品赞助', link: '/sponsor/items' },
-          { text: '鸣谢名单', link: '/sponsor/thanks' }
+          { text: '会员赞助', link: '/sponsor/' }
+        ]
+      },
+      {
+        text: '更新日志',
+        items: [
+          { text: '更新日志', link: '/changelog/' }
         ]
       }
     ],

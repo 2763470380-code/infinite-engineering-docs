@@ -15,7 +15,8 @@
 │   ├── rules/                  # 服务器规则
 │   ├── tutorial/               # 游戏教程（可持续增加文件）
 │   ├── faq/                    # 常见问题
-│   ├── sponsor/                # 赞助总览、点券、VIP、单品、鸣谢
+│   ├── sponsor/                # 会员赞助、VIP 权益与鸣谢名单
+│   ├── changelog/              # 更新日志
 │   └── index.md                # 首页
 ├── package.json
 └── .nvmrc
@@ -70,7 +71,7 @@ npm run preview
 
 GitHub 仓库创建后，在 `config.mts` 中取消 `socialLinks` 的注释并替换为真实仓库链接，右上角即会出现 GitHub 图标；当前没有填写虚假地址。
 
-## 赞助商品组件
+## 会员赞助组件
 
 在赞助页面中可复制以下 HTML 模板：
 
@@ -85,7 +86,7 @@ GitHub 仓库创建后，在 `config.mts` 中取消 `socialLinks` 的注释并�
 </div>
 ```
 
-VIP 使用 `vip-card`；提示条可使用 `notice`、`warning`、`info`。普通商品大量维护时可直接用 Markdown 表格。VitePress 原生提示框也可直接使用：
+VIP 使用 `vip-card`；提示条可使用 `notice`、`warning`、`info`。VitePress 原生提示框也可直接使用：
 
 ```md
 ::: info
