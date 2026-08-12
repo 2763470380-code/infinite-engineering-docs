@@ -3,13 +3,13 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   lang: 'zh-CN',
   title: '无限工程文档库',
-  description: 'INFINITE DOCUMENTATION｜Minecraft 1.21.1 科技、魔法与探索服务器官方文档。',
+  description: 'INFINITE DOCUMENTATION｜Minecraft 1.21.1 科技、魔法、高版本服务器官方文档。',
   cleanUrls: true,
-  lastUpdated: true,
+  lastUpdated: false,
   head: [
     ['link', { rel: 'icon', href: '/favicon.png' }],
     ['meta', { property: 'og:title', content: '无限工程文档库｜INFINITE DOCUMENTATION' }],
-    ['meta', { property: 'og:description', content: 'Minecraft 1.21.1 科技、魔法与探索服务器官方文档。' }],
+    ['meta', { property: 'og:description', content: 'Minecraft 1.21.1 科技、魔法、高版本服务器官方文档。' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:image', content: '/site-icon.png' }],
     ['meta', { name: 'theme-color', content: '#1d6fb8' }]
@@ -66,7 +66,6 @@ export default defineConfig({
     },
     outline: { level: [2, 3], label: '本页目录' },
     docFooter: { prev: '上一篇', next: '下一篇' },
-    lastUpdated: { text: '最后更新于' },
     returnToTopLabel: '返回顶部',
     sidebarMenuLabel: '目录',
     darkModeSwitchLabel: '外观',

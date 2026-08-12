@@ -8,11 +8,13 @@
 任何赞助获得的商品、道具、礼包及专属物品，不得随意给予、转送或借给其他玩家使用。请共同维护公平、稳定、良好的服务器发展环境。
 :::
 
-## 联系腐竹
+## 建议赞助前先联系腐竹
 
 腐竹 QQ：`2602346931`
 
 <CopyQQButton />
+
+下面是 VIP 等级、权益、物品展示。
 
 ## 黑铁VIP
 
@@ -80,12 +82,12 @@
 
 感谢以下玩家对无限工程长期运营与发展的支持。
 
-<ul class="thanks-grid">
-  <li>huakai</li>
-  <li>Lucky_KingS</li>
-  <li>DustS</li>
-  <li>Rineeeeee</li>
-  <li>PKQ</li>
-  <li>XingH__</li>
-  <li>ice</li>
-</ul>
+| 玩家名 | 日期 | 备注 |
+| :--- | :---: | :--- |
+| huakai |  |  |
+| Lucky_KingS |  |  |
+| DustS |  |  |
+| Rineeeeee |  |  |
+| PKQ |  |  |
+| XingH__ |  |  |
+| ice |  |  |

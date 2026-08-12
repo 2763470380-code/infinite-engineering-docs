@@ -4,7 +4,7 @@ layout: home
 hero:
   name: 无限工程文档库
   text: INFINITE DOCUMENTATION
-  tagline: Minecraft 1.21.1 科技 · 魔法 · 探索向长期服务器官方文档
+  tagline: Minecraft 1.21.1 科技 · 魔法 · 高版本服务器官方文档
   actions:
     - theme: brand
       text: 开始阅读
