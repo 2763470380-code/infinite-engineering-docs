@@ -1,4 +1,4 @@
-# 无限工程文档库 / INFINITE DOCUMENTATION
+# 无限工程官方文档 / INFINITE DOCUMENTATION
 
 基于 [VitePress](https://vitepress.dev/) 构建的 Minecraft 1.21.1 NeoForge 服务器「无限工程」官方文档站。该项目采用 Markdown 维护内容，可直接提交到 GitHub 并部署到 Cloudflare Pages。
 

@@ -99,6 +99,21 @@ type PackageTier = keyof typeof packages
 
 const props = defineProps<{ tier: PackageTier }>()
 const current = computed(() => packages[props.tier])
+const benefitCards = computed(() => current.value.benefits.map((benefit, index) => {
+  if (benefit.startsWith('最大家数量')) {
+    return { icon: '⌂', title: '专属家园', description: benefit }
+  }
+
+  if (benefit.includes('传送')) {
+    return { icon: '↗', title: '快速传送', description: benefit }
+  }
+
+  return {
+    icon: index === 1 ? '✦' : '◈',
+    title: benefit.includes('称号') ? '工程师身份' : '专属福利',
+    description: benefit
+  }
+}))
 </script>
 
 <template>
@@ -125,7 +140,10 @@ const current = computed(() => packages[props.tier])
         <section class="membership-package-content" aria-label="会员权益">
           <h4>会员权益</h4>
           <ul class="membership-benefits">
-            <li v-for="benefit in current.benefits" :key="benefit">{{ benefit }}</li>
+            <li v-for="benefit in benefitCards" :key="benefit.description">
+              <span class="membership-benefit-icon" aria-hidden="true">{{ benefit.icon }}</span>
+              <span><strong>{{ benefit.title }}</strong><small>{{ benefit.description }}</small></span>
+            </li>
           </ul>
         </section>
       </div>

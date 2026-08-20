@@ -2,13 +2,13 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: '无限工程文档库',
+  title: '无限工程官方文档',
   description: 'INFINITE DOCUMENTATION｜Minecraft 1.21.1 科技、魔法、高版本服务器官方文档。',
   cleanUrls: true,
   lastUpdated: false,
   head: [
     ['link', { rel: 'icon', href: '/favicon.png' }],
-    ['meta', { property: 'og:title', content: '无限工程文档库｜INFINITE DOCUMENTATION' }],
+    ['meta', { property: 'og:title', content: '无限工程官方文档｜INFINITE DOCUMENTATION' }],
     ['meta', { property: 'og:description', content: 'Minecraft 1.21.1 科技、魔法、高版本服务器官方文档。' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:image', content: '/site-icon.png' }],
@@ -72,7 +72,7 @@ export default defineConfig({
     lightModeSwitchTitle: '切换为浅色模式',
     darkModeSwitchTitle: '切换为深色模式',
     footer: {
-      message: '无限工程文档库 · INFINITE DOCUMENTATION',
+      message: '无限工程官方文档 · INFINITE DOCUMENTATION',
       copyright: '服务器信息与内容持续更新中'
     }
   }

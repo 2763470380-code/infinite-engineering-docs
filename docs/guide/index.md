@@ -1,6 +1,17 @@
+---
+pageClass: glass-doc guide-page
+---
+
 # 萌新指南
 
 本指南面向第一次接触无限工程的玩家。请按顺序完成客户端启动、进入服务器、QQ 绑定和登录流程；遇到不确定的提示时，以游戏内实际说明为准。
+
+<div class="guide-quick-links" aria-label="指南快速入口">
+  <a href="#开始游戏"><span>01</span><strong>开始游戏</strong><small>准备客户端并完成启动</small></a>
+  <a href="#进入服务器"><span>02</span><strong>进入服务器</strong><small>选择适合自己的连接线路</small></a>
+  <a href="#首次绑定-qq"><span>03</span><strong>首次绑定</strong><small>完成游戏账号与 QQ 绑定</small></a>
+  <a href="#前期目标"><span>04</span><strong>前期目标</strong><small>从安全稳定的基地开始</small></a>
+</div>
 
 ## 开始游戏
 

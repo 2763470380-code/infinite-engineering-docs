@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: 无限工程文档库
+  name: 无限工程官方文档
   text: INFINITE DOCUMENTATION
   tagline: Minecraft 1.21.1 科技 · 魔法 · 高版本服务器官方文档
   actions:
@@ -46,6 +46,15 @@ features:
     linkText: 查看更新日志 →
 ---
 
-::: info 关于无限工程
-无限工程是一个以长期周目与阶段性更新为方向的 Minecraft 1.21.1 NeoForge 服务器。这里将科技、魔法与探索置于同一条持续发展的游戏进程中；本资料库会随服务器内容逐步完善。
-:::
+<section class="home-glass-intro" aria-label="关于无限工程">
+  <div class="home-glass-intro-main">
+    <p class="glass-kicker">ABOUT INFINITE ENGINEERING</p>
+    <h2>关于无限工程</h2>
+    <p>无限工程是一个以长期周目与阶段性更新为方向的 Minecraft 1.21.1 NeoForge 服务器。这里将科技、魔法与探索置于同一条持续发展的游戏进程中；本资料库会随服务器内容逐步完善。</p>
+  </div>
+  <div class="home-glass-signals">
+    <div><span>01</span><strong>长期周目</strong><p>持续建设，阶段性更新。</p></div>
+    <div><span>02</span><strong>多元发展</strong><p>科技、魔法与探索并行。</p></div>
+    <div><span>03</span><strong>任务引导</strong><p>优先参考游戏内 FTB 任务。</p></div>
+  </div>
+</section>
