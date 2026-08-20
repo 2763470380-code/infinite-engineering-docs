@@ -1045,3 +1045,67 @@ body { background: var(--night-deep); }
   .Layout:not(.membership-page) .VPHero .text { font-size: 12px !important; }
   .Layout:not(.membership-page) .VPHero .main { max-width: 100%; }
 }
+
+/* 首页排版修正：SF Pro 风格大字与精确 CTA 对齐。 */
+.Layout:not(.membership-page) .VPHero .name {
+  color: #f5f5f7 !important;
+  font-family: "SF Pro Display", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif !important;
+  font-size: clamp(3.5rem, 6vw, 6rem) !important;
+  font-weight: 750 !important;
+  letter-spacing: -.045em !important;
+  line-height: .98 !important;
+  text-shadow: none !important;
+}
+.Layout:not(.membership-page) .VPHero .text {
+  color: rgba(245, 245, 247, .72) !important;
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif !important;
+}
+.Layout:not(.membership-page) .VPHero .actions {
+  align-items: center;
+  justify-content: flex-start;
+}
+.Layout:not(.membership-page) .VPHero .actions .VPButton {
+  display: inline-flex !important;
+  min-height: 48px;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 24px !important;
+  line-height: 1 !important;
+  text-align: center;
+  white-space: nowrap;
+}
+.Layout:not(.membership-page) .VPHero .actions .VPButton .text { display: block; line-height: 1 !important; }
+.Layout:not(.membership-page) .VPFeature .icon { display: none !important; }
+.Layout:not(.membership-page) .VPFeature .title { margin-top: 0 !important; }
+
+/* 礼包物品标签始终被约束在自身分类卡片内。 */
+.membership-page .membership-inventory-grid {
+  width: 100%;
+  min-width: 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.membership-page .membership-inventory-category,
+.membership-page .item-chip-grid {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.membership-page .item-chip-grid {
+  align-content: flex-start;
+  overflow: hidden;
+}
+.membership-page .item-chip {
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  white-space: normal;
+}
+@media (max-width: 640px) {
+  .Layout:not(.membership-page) .VPHero .name { font-size: clamp(3.15rem, 14vw, 4.6rem) !important; }
+  .Layout:not(.membership-page) .VPHero .actions { align-items: stretch; }
+  .Layout:not(.membership-page) .VPHero .actions .VPButton { width: 100%; }
+  .membership-page .membership-inventory-grid { grid-template-columns: minmax(0, 1fr); }
+}

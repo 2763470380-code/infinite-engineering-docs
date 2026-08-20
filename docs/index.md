@@ -15,32 +15,26 @@ hero:
 
 features:
   - title: 萌新指南
-    icon: "◌"
     details: 从进入服务器、基础设置到第一阶段目标，循序开始你的旅程。
     link: /guide/
     linkText: 阅读指南 →
   - title: 服务器规则
-    icon: "◆"
     details: 了解社区规范、游戏行为边界与申诉原则，共同维护良好环境。
     link: /rules/
     linkText: 查看规则 →
   - title: 游玩教程
-    icon: "⊞"
     details: 面向科技、魔法、探索与自动化的可持续维护游玩教程库。
     link: /tutorial/
     linkText: 浏览教程 →
   - title: 常见问题
-    icon: "?"
     details: 针对客户端启动、服务器工程游玩、游戏机制与账号问题的快速解答。
     link: /faq/
     linkText: 查找答案 →
   - title: 会员赞助
-    icon: "+"
     details: 查看永久会员等级、对应权益、赞助说明与鸣谢名单。
     link: /sponsor/
     linkText: 查看会员赞助 →
   - title: 更新日志
-    icon: "↻"
     details: 记录文档、服务器功能、玩法与问题修复的重要变化。
     link: /changelog/
     linkText: 查看更新日志 →
