@@ -8,6 +8,7 @@ type GiftItem = {
 
 type GiftCategory = {
   name: string
+  description?: string
   items: GiftItem[]
 }
 
@@ -35,7 +36,7 @@ const packages = {
     image: '/vip/bronze-vip.png',
     benefits: ['最大家数量 +5', '传送无延迟', '青铜VIP专属特效与称号'],
     categories: [
-      { name: '重要物品', items: [{ name: '加速火把' }] },
+      { name: '重要物品', description: '四倍加速，加速产线与机器，节约大量时间。', items: [{ name: '加速火把' }] },
       { name: 'AE2', items: [{ name: '256M存储元件', quantity: '32' }, { name: '外壳', quantity: '32' }, { name: '合成单元', quantity: '32' }, { name: 'ME接口', quantity: '32' }, { name: '过载模块', quantity: '32' }, { name: '扩展模块', quantity: '32' }, { name: '样板供应器', quantity: '32' }, { name: '控制器', quantity: '32' }, { name: 'ME线缆', quantity: '64' }, { name: '过载控制器', quantity: '8' }, { name: '无线终端' }, { name: '无线信号增幅器' }, { name: '无线信号接口' }, { name: '量子套' }, { name: '无限圆石元件' }, { name: '无限水元件' }, { name: '无限熔岩元件' }] },
       { name: '精华与无尽', items: [{ name: '初级精华', quantity: '32' }, { name: '高级精华', quantity: '32' }, { name: '高级精华', quantity: '16' }, { name: '基础中子态素收集器', quantity: '4' }] },
       { name: '工业升级', items: [{ name: '奇异太阳能' }, { name: '太阳能组件（各）', quantity: '4' }, { name: '变压升级', quantity: '32' }, { name: '基础超频', quantity: '64' }, { name: '改良等级轧机' }, { name: '改良等级挤压机' }, { name: '改良等级挤出机' }, { name: '改良等级粉碎机' }, { name: '改良等级提取机' }, { name: '改良等级合金机' }, { name: '改良等级固体制冷机' }, { name: '改良等级储能器' }, { name: '分子重构仪' }, { name: '冷却线缆', quantity: '64' }, { name: '电缆', quantity: '64' }] },
@@ -52,7 +53,7 @@ const packages = {
     featured: true,
     benefits: ['最大家数量 +8', '传送无延迟', '黄金VIP专属特效与称号'],
     categories: [
-      { name: '重要', items: [{ name: '加速火把' }] },
+      { name: '重要', description: '四倍加速，加速产线与机器，节约大量时间。', items: [{ name: '加速火把' }] },
       { name: 'AE2', items: [{ name: '量子存储元件' }, { name: '量子计算机' }, { name: 'ME接口', quantity: '64' }, { name: '过载模块', quantity: '64' }, { name: '扩展模块', quantity: '64' }, { name: '样板供应器', quantity: '64' }, { name: '控制器', quantity: '64' }, { name: 'ME线缆', quantity: '64' }, { name: '过载控制器', quantity: '16' }, { name: '无线终端' }, { name: '无线信号增幅器' }, { name: '无线信号接口' }, { name: '量子套' }, { name: '无限圆石' }, { name: '无限水' }, { name: '无限熔岩' }] },
       { name: '精华与无尽', items: [{ name: '初级精华', quantity: '32' }, { name: '高级精华', quantity: '32' }, { name: '高级精华', quantity: '32' }, { name: '致密中子态素收集器' }, { name: '万魂之核' }] },
       { name: '工业升级', items: [{ name: '衍射太阳能' }, { name: '太阳能组件（各）', quantity: '4' }, { name: '变压升级', quantity: '32' }, { name: '高级超频', quantity: '64' }, { name: '性能升级', quantity: '16' }, { name: 'QE/EF转换器' }, { name: '高级等级轧机' }, { name: '高级等级挤压机' }, { name: '高级等级挤出机' }, { name: '高级等级粉碎机' }, { name: '高级等级提取机' }, { name: '高级等级合金机' }, { name: '高级等级固体制冷机' }, { name: '高级等级储能器' }, { name: '分子重构仪' }, { name: '高级分子重构仪' }, { name: '复制机四件套' }, { name: '光子量子生成机' }, { name: '量子储能' }, { name: '冷却线缆', quantity: '64' }, { name: '电缆', quantity: '64' }, { name: '量子电缆', quantity: '64' }] },
@@ -68,7 +69,7 @@ const packages = {
     image: '/vip/diamond-vip.png',
     benefits: ['最大家数量 +12', '传送无延迟、无冷却', '钻石VIP专属特效与称号'],
     categories: [
-      { name: '重要', items: [{ name: '压缩加速火把' }] },
+      { name: '重要', description: '压缩加速火把：360 倍加速，极致加速，效率爆表。', items: [{ name: '压缩加速火把' }] },
       { name: 'AE2', items: [{ name: '无限存储元件' }, { name: '满配量子计算机' }, { name: 'ME接口', quantity: '64' }, { name: '过载模块', quantity: '64' }, { name: '扩展模块', quantity: '64' }, { name: '样板供应器', quantity: '64' }, { name: '控制器', quantity: '64' }, { name: 'ME线缆', quantity: '64' }, { name: '过载控制器', quantity: '16' }, { name: '无线终端' }, { name: '无线信号增幅器' }, { name: '无线信号接口' }, { name: 'MeKa套' }, { name: '无限圆石元件' }, { name: '无限水元件' }, { name: '无限熔岩元件' }] },
       { name: '精华与无尽', items: [{ name: '全类型作物种子' }, { name: '创造无限创造营养液' }, { name: '精英中子态素收集器', quantity: '2' }, { name: '精英中子态素压缩机' }, { name: '终焉工作台' }] },
       { name: '工业升级', items: [{ name: '重子太阳能' }, { name: '太阳能组件（各）', quantity: '4' }, { name: '变压升级', quantity: '32' }, { name: '高级超频', quantity: '64' }, { name: '性能升级', quantity: '16' }, { name: '堆叠/瞬时', quantity: '16' }, { name: 'QE/EF转换器' }, { name: '完美级轧机' }, { name: '完美级挤压机' }, { name: '完美级挤出机' }, { name: '完美级粉碎机' }, { name: '完美级提取机' }, { name: '完美级合金机' }, { name: '完美级固体制冷机' }, { name: '完美级储能器' }, { name: '分子重构仪' }, { name: '高级分子重构仪' }, { name: '复制机四件套' }, { name: '中子量子生成机' }, { name: '量子储能' }, { name: '冷却线缆', quantity: '64' }, { name: '电缆', quantity: '64' }, { name: '量子电缆', quantity: '64' }, { name: '创造UU物质' }] },
@@ -85,7 +86,7 @@ const packages = {
     infinity: true,
     benefits: ['最大家数量 +16', '传送无延迟、无冷却', '寰宇VIP专属特效与称号'],
     categories: [
-      { name: '重要', items: [{ name: '压缩加速火把', quantity: '2' }, { name: '时序钟' }, { name: '区块加载器' }, { name: '永恒奇点', quantity: '8' }, { name: '无尽催化剂', quantity: '4' }, { name: '无限元件：矿石' }] },
+      { name: '重要', description: '压缩加速火把：360 倍加速，极致加速，效率爆表。时序钟：至高 256 倍加速机器与作物。区块加载器：离线加载，无需挂机。永恒奇点与无尽催化剂：无尽材料。无限元件：矿石：无限全种类矿石，世上存在的矿石种类“all infinite”。', items: [{ name: '压缩加速火把', quantity: '2' }, { name: '时序钟' }, { name: '区块加载器' }, { name: '永恒奇点', quantity: '8' }, { name: '无尽催化剂', quantity: '4' }, { name: '无限元件：矿石' }] },
       { name: 'AE2', items: [{ name: '无限存储元件' }, { name: '满配量子计算机' }, { name: 'ME接口', quantity: '64' }, { name: '过载模块', quantity: '64' }, { name: '扩展模块', quantity: '64' }, { name: '样板供应器', quantity: '64' }, { name: '控制器', quantity: '64' }, { name: 'ME线缆', quantity: '64' }, { name: '过载控制器', quantity: '16' }, { name: '无线终端' }, { name: '无线信号增幅器' }, { name: '无线信号接口' }, { name: 'MeKa套' }, { name: '无限圆石' }, { name: '无限水' }, { name: '无限熔岩' }] },
       { name: '精华与无尽', items: [{ name: '全类型作物种子' }, { name: '创造营养液' }, { name: '极限中子态素收集器', quantity: '4' }, { name: '极限中子态素压缩机', quantity: '4' }, { name: '终焉工作台', quantity: '2' }] },
       { name: '工业升级', items: [{ name: '引力子太阳能' }, { name: '太阳能组件（各）', quantity: '4' }, { name: '变压升级', quantity: '32' }, { name: '高级超频', quantity: '64' }, { name: '性能升级', quantity: '64' }, { name: '堆叠/瞬时', quantity: '64' }, { name: 'QE/EF转换器' }, { name: 'IU光子级轧机' }, { name: 'IU光子级挤压机' }, { name: 'IU光子级挤出机' }, { name: 'IU光子级粉碎机' }, { name: 'IU光子级提取机' }, { name: 'IU光子级合金机' }, { name: 'IU光子级固体制冷机' }, { name: 'IU光子级储能器' }, { name: '分子重构仪' }, { name: '高级分子重构仪' }, { name: '复制机四件套' }, { name: '引力子量子生成机' }, { name: '量子储能' }, { name: '冷却线缆', quantity: '64' }, { name: '电缆', quantity: '64' }, { name: '量子电缆', quantity: '64' }, { name: '创造UU物质' }, { name: '固态物质复制机' }, { name: '固态物质转化机' }] },
@@ -161,7 +162,7 @@ const benefitCards = computed(() => current.value.benefits.map((benefit, index) 
       <section class="membership-package-inventory" :aria-label="`${current.name}礼包物品清单`">
         <h4>礼包物品清单</h4>
         <div class="membership-inventory-grid">
-          <section v-for="category in current.categories" :key="category.name" class="membership-inventory-category">
+          <section v-for="category in current.categories" :key="category.name" class="membership-inventory-category" :class="{ 'has-description': category.description }">
             <h5>{{ categoryLabel(category.name) }}</h5>
             <ul class="item-chip-grid">
               <li v-for="item in category.items" :key="`${item.name}-${item.quantity ?? 'single'}`" class="item-chip">
@@ -169,6 +170,7 @@ const benefitCards = computed(() => current.value.benefits.map((benefit, index) 
                 <sup v-if="item.quantity" :aria-label="`数量 ${item.quantity}`">{{ item.quantity }}</sup>
               </li>
             </ul>
+            <p v-if="category.description" class="membership-inventory-description">{{ category.description }}</p>
           </section>
         </div>
       </section>

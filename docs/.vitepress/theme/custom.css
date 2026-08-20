@@ -1228,3 +1228,33 @@ body { background: var(--night-deep); }
 }
 .Layout .VPNavBar .divider,
 .Layout .VPNavBar .divider-line { background: transparent !important; }
+
+/* 英文眉标与首页标题同轴居中。 */
+.Layout:not(.membership-page) .VPHero .main > .text {
+  align-self: center !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  text-align: center !important;
+}
+
+/* 数量角标预留上方与右侧空间，物品标签永不被裁切。 */
+.membership-page .membership-inventory-category { overflow: visible; }
+.membership-page .item-chip-grid {
+  min-height: 44px;
+  padding: 8px 8px 2px !important;
+  overflow: visible !important;
+}
+.membership-page .item-chip {
+  flex: 0 1 auto;
+  max-inline-size: calc(100% - 14px);
+}
+.membership-page .membership-inventory-category.has-description .item-chip-grid {
+  justify-content: center;
+}
+.membership-page .membership-inventory-description {
+  margin: 14px auto 2px !important;
+  color: rgba(255, 255, 255, .72) !important;
+  font-size: 13px;
+  line-height: 1.7;
+  text-align: center;
+}
