@@ -1258,3 +1258,50 @@ body { background: var(--night-deep); }
   line-height: 1.7;
   text-align: center;
 }
+
+/* 清单卡片底部安全留白，最后一行标签和数量角标不会贴边。 */
+.membership-page .membership-inventory-grid { padding: 0 8px 16px; }
+.membership-page .membership-inventory-category { padding-bottom: 14px; }
+
+/* 会员权益卡片内的内容统一居中。 */
+.membership-page .membership-benefits li {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.membership-page .membership-benefits li > span:last-child { justify-items: center; }
+.membership-page .membership-benefits small { text-align: center; }
+
+/* 礼包详情等级色。 */
+.membership-package#black-iron { --package-tier-color: #c6cbd1; }
+.membership-package#bronze { --package-tier-color: #b98752; }
+.membership-package#gold { --package-tier-color: #e4b863; }
+.membership-package#diamond { --package-tier-color: #6eafff; }
+.membership-package#infinity { --package-tier-color: #ee756e; }
+.membership-package#black-iron > header h3,
+.membership-package#bronze > header h3,
+.membership-package#gold > header h3,
+.membership-package#diamond > header h3,
+.membership-package#infinity > header h3,
+.membership-package#black-iron > header > p,
+.membership-package#bronze > header > p,
+.membership-package#gold > header > p,
+.membership-package#diamond > header > p,
+.membership-package#infinity > header > p,
+.membership-package#black-iron .membership-package-label,
+.membership-package#bronze .membership-package-label,
+.membership-package#gold .membership-package-label,
+.membership-package#diamond .membership-package-label,
+.membership-package#infinity .membership-package-label { color: var(--package-tier-color) !important; }
+.membership-package#black-iron { border-color: rgba(198, 203, 209, .45); }
+.membership-package#bronze { border-color: rgba(185, 135, 82, .5); }
+.membership-package#gold { border-color: rgba(228, 184, 99, .52); }
+.membership-package#diamond { border-color: rgba(110, 175, 255, .52); }
+.membership-package#infinity { border-color: rgba(238, 117, 110, .52); }
+
+/* 最终覆盖：首页主标题固定为会员页同款香槟黄，避免默认品牌蓝回退。 */
+html .Layout:not(.membership-page) .VPHero .name {
+  color: #e4b863 !important;
+  -webkit-text-fill-color: #e4b863;
+}
