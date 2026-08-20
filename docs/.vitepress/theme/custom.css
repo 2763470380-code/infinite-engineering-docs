@@ -1154,7 +1154,7 @@ body { background: var(--night-deep); }
 .Layout:not(.membership-page) .VPHero .name {
   max-width: 720px;
   margin: 20px auto 18px !important;
-  color: #f7fafc !important;
+  color: var(--champagne) !important;
   font-family: Georgia, "Times New Roman", "Noto Serif SC", serif !important;
   font-size: clamp(42px, 6vw, 72px) !important;
   font-weight: 600 !important;
@@ -1210,3 +1210,21 @@ body { background: var(--night-deep); }
   .Layout:not(.membership-page) .VPHero .tagline { font-size: 16px !important; }
   .Layout:not(.membership-page) .VPHero .actions { width: min(100%, 320px); flex-direction: column; }
 }
+
+/* VitePress 在含 Sidebar 页面为导航内部容器填充默认背景；统一清除以避免黑块。 */
+.Layout .VPNavBar,
+.Layout .VPNavBar .wrapper,
+.Layout .VPNavBar .container,
+.Layout .VPNavBar .title,
+.Layout .VPNavBar .content,
+.Layout .VPNavBar .content-body,
+.Layout .VPNavBarTitle,
+.Layout .VPNavBarTitle.has-sidebar,
+.Layout .VPNavBarMenu,
+.Layout .VPNavBarAppearance,
+.Layout .VPNavBarExtra,
+.Layout .VPNavBarExtra .button {
+  background: transparent !important;
+}
+.Layout .VPNavBar .divider,
+.Layout .VPNavBar .divider-line { background: transparent !important; }
