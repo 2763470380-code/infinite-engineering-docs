@@ -24,14 +24,14 @@ features:
     details: 了解社区规范、游戏行为边界与申诉原则，共同维护良好环境。
     link: /rules/
     linkText: 查看规则 →
-  - title: 游戏教程
+  - title: 游玩教程
     icon: "⊞"
-    details: 面向科技、魔法、探索与自动化的可持续维护教程库。
+    details: 面向科技、魔法、探索与自动化的可持续维护游玩教程库。
     link: /tutorial/
     linkText: 浏览教程 →
   - title: 常见问题
     icon: "?"
-    details: 针对启动、联机、游戏机制与账号问题的快速解答。
+    details: 针对客户端启动、服务器工程游玩、游戏机制与账号问题的快速解答。
     link: /faq/
     linkText: 查找答案 →
   - title: 会员赞助

@@ -20,10 +20,10 @@ const packages = {
     image: '/vip/black-iron-vip.png',
     benefits: ['最大家数量 +3', '黑铁VIP专属特效', '黑铁VIP专属称号'],
     categories: [
-      { name: 'AE2', items: [{ name: '256K存储元件', quantity: '16' }, { name: '外壳', quantity: '16' }, { name: '合成单元', quantity: '16' }, { name: 'ME接口', quantity: '16' }, { name: '样板供应器', quantity: '16' }, { name: '控制器', quantity: '16' }, { name: 'ME线缆', quantity: '64' }, { name: '无线终端' }, { name: '无线信号增幅器' }, { name: '无线信号接口' }, { name: '无限圆石元件' }, { name: '无限水元件' }, { name: '无限熔岩元件' }] },
-      { name: '精华与无尽', items: [{ name: '初级精华', quantity: '32' }, { name: '高级精华', quantity: '16' }, { name: '高级精华', quantity: '8' }, { name: '基础中子态素收集器' }] },
-      { name: '工业升级', items: [{ name: '质子太阳能' }, { name: '太阳能升级组件（各）', quantity: '4' }, { name: '变压升级', quantity: '32' }, { name: '基础超频', quantity: '32' }, { name: '基础等级轧机' }, { name: '基础等级挤压机' }, { name: '基础等级挤出机' }, { name: '基础等级粉碎/提取机' }, { name: '基础等级合金炉' }, { name: '基础等级固体制冷机' }, { name: '基础等级储能器' }, { name: '冷却线缆', quantity: '64' }, { name: '电缆', quantity: '64' }] },
-      { name: 'MEK', items: [{ name: '精英等级富集机' }, { name: '精英等级粉碎机' }, { name: '精英等级熔炼机' }, { name: '精英等级净化机' }, { name: '精英等级提纯机' }, { name: '精英等级种植机' }, { name: '电缆', quantity: '64' }, { name: '强化速度/能量升级', quantity: '32' }, { name: 'MEK多元宇宙等级安装器' }, { name: '大型风力发电机' }, { name: '燃气发电机', quantity: '8' }] },
+      { name: 'AE2模组物品', items: [{ name: '256K存储元件', quantity: '16' }, { name: '外壳', quantity: '16' }, { name: '合成单元', quantity: '16' }, { name: 'ME接口', quantity: '16' }, { name: '样板供应器', quantity: '16' }, { name: '控制器', quantity: '16' }, { name: 'ME线缆', quantity: '64' }, { name: '无线终端' }, { name: '无线信号增幅器' }, { name: '无线信号接口' }, { name: '无限圆石元件' }, { name: '无限水元件' }, { name: '无限熔岩元件' }] },
+      { name: '精华与无尽模组物品', items: [{ name: '初级精华', quantity: '32' }, { name: '高级精华', quantity: '16' }, { name: '高级精华', quantity: '8' }, { name: '基础中子态素收集器' }] },
+      { name: '工业升级模组物品', items: [{ name: '质子太阳能' }, { name: '太阳能升级组件（各）', quantity: '4' }, { name: '变压升级', quantity: '32' }, { name: '基础超频', quantity: '32' }, { name: '基础等级轧机' }, { name: '基础等级挤压机' }, { name: '基础等级挤出机' }, { name: '基础等级粉碎/提取机' }, { name: '基础等级合金炉' }, { name: '基础等级固体制冷机' }, { name: '基础等级储能器' }, { name: '冷却线缆', quantity: '64' }, { name: '电缆', quantity: '64' }] },
+      { name: 'MEK模组物品', items: [{ name: '精英等级富集机' }, { name: '精英等级粉碎机' }, { name: '精英等级熔炼机' }, { name: '精英等级净化机' }, { name: '精英等级提纯机' }, { name: '精英等级种植机' }, { name: '电缆', quantity: '64' }, { name: '强化速度/能量升级', quantity: '32' }, { name: 'MEK多元宇宙等级安装器' }, { name: '大型风力发电机' }, { name: '燃气发电机', quantity: '8' }] },
       { name: '工具与拔刀剑', items: [{ name: '黑曜石镐尖斧（效率 XX、时运 X）' }, { name: '神威刀坎纳' }, { name: '耀魂碎片', quantity: '64' }] }
     ]
   },
@@ -35,7 +35,7 @@ const packages = {
     image: '/vip/bronze-vip.png',
     benefits: ['最大家数量 +5', '传送无延迟', '青铜VIP专属特效与称号'],
     categories: [
-      { name: '重要', items: [{ name: '加速火把' }] },
+      { name: '重要物品', items: [{ name: '加速火把' }] },
       { name: 'AE2', items: [{ name: '256M存储元件', quantity: '32' }, { name: '外壳', quantity: '32' }, { name: '合成单元', quantity: '32' }, { name: 'ME接口', quantity: '32' }, { name: '过载模块', quantity: '32' }, { name: '扩展模块', quantity: '32' }, { name: '样板供应器', quantity: '32' }, { name: '控制器', quantity: '32' }, { name: 'ME线缆', quantity: '64' }, { name: '过载控制器', quantity: '8' }, { name: '无线终端' }, { name: '无线信号增幅器' }, { name: '无线信号接口' }, { name: '量子套' }, { name: '无限圆石元件' }, { name: '无限水元件' }, { name: '无限熔岩元件' }] },
       { name: '精华与无尽', items: [{ name: '初级精华', quantity: '32' }, { name: '高级精华', quantity: '32' }, { name: '高级精华', quantity: '16' }, { name: '基础中子态素收集器', quantity: '4' }] },
       { name: '工业升级', items: [{ name: '奇异太阳能' }, { name: '太阳能组件（各）', quantity: '4' }, { name: '变压升级', quantity: '32' }, { name: '基础超频', quantity: '64' }, { name: '改良等级轧机' }, { name: '改良等级挤压机' }, { name: '改良等级挤出机' }, { name: '改良等级粉碎机' }, { name: '改良等级提取机' }, { name: '改良等级合金机' }, { name: '改良等级固体制冷机' }, { name: '改良等级储能器' }, { name: '分子重构仪' }, { name: '冷却线缆', quantity: '64' }, { name: '电缆', quantity: '64' }] },
@@ -99,6 +99,16 @@ type PackageTier = keyof typeof packages
 
 const props = defineProps<{ tier: PackageTier }>()
 const current = computed(() => packages[props.tier])
+const categoryLabels: Record<string, string> = {
+  '重要': '重要物品',
+  'AE2': 'AE2模组物品',
+  '精华与无尽': '精华与无尽模组物品',
+  '工业升级': '工业升级模组物品',
+  'MEK': 'MEK模组物品',
+  '工具与拔刀剑': '工具与拔刀剑物品',
+  '工具与扩展': '工具与扩展物品'
+}
+const categoryLabel = (name: string) => categoryLabels[name] ?? name
 const benefitCards = computed(() => current.value.benefits.map((benefit, index) => {
   if (benefit.startsWith('最大家数量')) {
     return { icon: '⌂', title: '专属家园', description: benefit }
@@ -152,7 +162,7 @@ const benefitCards = computed(() => current.value.benefits.map((benefit, index) 
         <h4>礼包物品清单</h4>
         <div class="membership-inventory-grid">
           <section v-for="category in current.categories" :key="category.name" class="membership-inventory-category">
-            <h5>{{ category.name }}</h5>
+            <h5>{{ categoryLabel(category.name) }}</h5>
             <ul class="item-chip-grid">
               <li v-for="item in category.items" :key="`${item.name}-${item.quantity ?? 'single'}`" class="item-chip">
                 {{ item.name }}
