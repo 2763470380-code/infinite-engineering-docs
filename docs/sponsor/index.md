@@ -1,93 +1,59 @@
-# 会员赞助
+---
+pageClass: membership-page
+outline: false
+---
 
-## 赞助前请阅读
+<section class="membership-hero" aria-labelledby="membership-title">
+  <p class="membership-eyebrow">VIP MEMBERSHIP</p>
+  <h1 id="membership-title">选择适合你的<span>无限工程</span>会员等级</h1>
+  <p class="membership-lede">永久会员权益、专属礼包与长期周目继承。请根据自己的实际游玩需求选择支持方式。</p>
+  <div class="membership-hero-actions"><a class="membership-button primary" href="#vip-tiers">查看会员等级</a><a class="membership-button secondary" href="#membership-rules">阅读赞助说明</a></div>
+</section>
 
-所有等级赞助均为**永久赞助**。会员等级永久有效，并支持服务器后续周目继承对应永久权益。
+<section id="membership-rules" class="membership-section membership-rules" aria-labelledby="rules-title">
+  <div class="membership-section-heading"><p class="membership-kicker">MEMBERSHIP POLICY</p><h2 id="rules-title">赞助前请阅读</h2></div>
+  <div class="membership-policy-grid">
+    <article><h3>永久权益</h3><p>所有会员等级均为永久赞助，会员权益与会员赞助 <strong>100% 周目继承</strong>。</p></article>
+    <article><h3>点券与升级</h3><p>1 元 = 10 点券。会员只能使用充值获得的点券购买；低等级升级至高等级时只需补差价。</p></article>
+    <article><h3>礼包回收</h3><p>升级时会回收此前礼包。若旧礼包内的物品已使用或丢失，将从新礼包中扣除对应物品。</p></article>
+  </div>
+  <div class="membership-notice" role="note"><strong>礼包物品使用说明：</strong>会员礼包中的物品禁止随意给予其他玩家使用；组队玩家不受此项限制。请共同维护公平、稳定、良好的服务器发展环境。</div>
+</section>
 
-::: warning 会员物品使用说明
-任何赞助获得的商品、道具、礼包及专属物品，不得随意给予、转送或借给其他玩家使用。请共同维护公平、稳定、良好的服务器发展环境。
-:::
-
-## 建议赞助前先联系腐竹
-
-腐竹 QQ：`2602346931`
-
-<CopyQQButton />
-
-下面是 VIP 等级、权益、物品展示。
-
-## 黑铁VIP
-
-<section class="vip-card vip-tier">
-  <div class="vip-tier-header"><h3>黑铁VIP</h3><span class="price">¥ 38</span></div>
-  <div class="vip-tier-content">
-    <div><h4>VIP 权益</h4><ul><li>最大家数量 +3</li><li>黑铁VIP专属特效</li><li>黑铁VIP专属称号</li><li>黑铁VIP礼包</li></ul></div>
-    <div><div class="vip-gift-placeholder">VIP 礼包图片待补充</div><div class="vip-gift-list"><h4>VIP 礼包物品清单</h4><p>礼包物品清单待补充。</p></div></div>
+<section id="vip-tiers" class="membership-section" aria-labelledby="tiers-title">
+  <div class="membership-section-heading centered"><p class="membership-kicker">MEMBERSHIP TIERS</p><h2 id="tiers-title">五个永久会员等级</h2><p>卡片仅展示核心差异；完整礼包内容与图片请查看下方对应等级。</p></div>
+  <div class="membership-tier-grid">
+    <article class="membership-tier-card"><h3>黑铁VIP</h3><p class="membership-tier-summary">适合开始长期发展的玩家。</p><p class="membership-tier-price">¥ 38</p><p class="membership-tier-period">永久会员</p><a href="#black-iron" class="membership-card-link">查看礼包详情</a><ul><li>最大家数量 +3</li><li>专属特效与称号</li><li>黑铁VIP礼包</li></ul></article>
+    <article class="membership-tier-card"><h3>青铜VIP</h3><p class="membership-tier-summary">提供更充足的便利权益与礼包支持。</p><p class="membership-tier-price">¥ 68</p><p class="membership-tier-period">永久会员</p><a href="#bronze" class="membership-card-link">查看礼包详情</a><ul><li>最大家数量 +5</li><li>传送无延迟</li><li>专属特效、称号与礼包</li></ul></article>
+    <article class="membership-tier-card featured"><p class="membership-recommended">推荐</p><h3>黄金VIP</h3><p class="membership-tier-summary">兼顾长期发展与进阶科技建设。</p><p class="membership-tier-price">¥ 138</p><p class="membership-tier-period">永久会员</p><a href="#gold" class="membership-card-link">查看礼包详情</a><ul><li>最大家数量 +8</li><li>传送无延迟</li><li>专属特效、称号与礼包</li></ul></article>
+    <article class="membership-tier-card"><h3>钻石VIP</h3><p class="membership-tier-summary">面向需要更高便利度的长期玩家。</p><p class="membership-tier-price">¥ 328</p><p class="membership-tier-period">永久会员</p><a href="#diamond" class="membership-card-link">查看礼包详情</a><ul><li>最大家数量 +12</li><li>传送无延迟、无冷却</li><li>专属特效、称号与礼包</li></ul></article>
+    <article class="membership-tier-card infinity"><h3>寰宇VIP</h3><p class="membership-tier-summary">提供最高等级的长期会员权益。</p><p class="membership-tier-price">¥ 648</p><p class="membership-tier-period">永久会员</p><a href="#infinity" class="membership-card-link">查看礼包详情</a><ul><li>最大家数量 +16</li><li>传送无延迟、无冷却</li><li>专属特效、称号与礼包</li></ul></article>
   </div>
 </section>
 
-<!-- TODO: 黑铁VIP礼包图片：docs/.vitepress/public/vip/black-iron-vip.png -->
+<section class="membership-facts" aria-label="服务器与会员信息"><div><strong>永久会员</strong><span>100% 周目继承</span></div><div><strong>1 元 = 10 点券</strong><span>充值点券购买会员</span></div><div><strong>NeoForge 1.21.1</strong><span>服务器核心版本</span></div><div><strong>科技 · 魔法 · 探索</strong><span>长期发展方向</span></div></section>
 
-## 青铜VIP
-
-<section class="vip-card vip-tier">
-  <div class="vip-tier-header"><h3>青铜VIP</h3><span class="price">¥ 68</span></div>
-  <div class="vip-tier-content">
-    <div><h4>VIP 权益</h4><ul><li>最大家数量 +5</li><li>传送无延迟</li><li>青铜VIP专属特效</li><li>青铜VIP专属称号</li><li>青铜VIP礼包</li></ul></div>
-    <div><div class="vip-gift-placeholder">VIP 礼包图片待补充</div><div class="vip-gift-list"><h4>VIP 礼包物品清单</h4><p>礼包物品清单待补充。</p></div></div>
-  </div>
+<section class="membership-section membership-comparison" aria-labelledby="comparison-title">
+  <div class="membership-section-heading centered"><p class="membership-kicker">BENEFIT COMPARISON</p><h2 id="comparison-title">完整权益对比</h2><p>查看不同会员等级之间的主要权益区别。</p></div>
+  <div class="membership-table-wrap" tabindex="0" aria-label="会员权益对比表，可横向滚动"><table><thead><tr><th>会员权益</th><th>黑铁</th><th>青铜</th><th class="highlight">黄金</th><th>钻石</th><th>寰宇</th></tr></thead><tbody><tr><th>永久会员</th><td>✓</td><td>✓</td><td class="highlight">✓</td><td>✓</td><td>✓</td></tr><tr><th>最大家数量</th><td>+3</td><td>+5</td><td class="highlight">+8</td><td>+12</td><td>+16</td></tr><tr><th>传送无延迟</th><td>—</td><td>✓</td><td class="highlight">✓</td><td>✓</td><td>✓</td></tr><tr><th>传送无冷却</th><td>—</td><td>—</td><td class="highlight">—</td><td>✓</td><td>✓</td></tr><tr><th>专属特效</th><td>✓</td><td>✓</td><td class="highlight">✓</td><td>✓</td><td>✓</td></tr><tr><th>专属称号</th><td>✓</td><td>✓</td><td class="highlight">✓</td><td>✓</td><td>✓</td></tr><tr><th>对应等级礼包</th><td>✓</td><td>✓</td><td class="highlight">✓</td><td>✓</td><td>✓</td></tr></tbody></table></div>
 </section>
 
-<!-- TODO: 青铜VIP礼包图片：docs/.vitepress/public/vip/bronze-vip.png -->
+<section class="membership-section membership-details" aria-labelledby="details-title">
+  <div class="membership-section-heading centered"><p class="membership-kicker">GIFT PACKAGES</p><h2 id="details-title">VIP 礼包详情</h2><p>以下为各等级礼包预览与物品清单；升级会员时请参阅上方礼包回收说明。</p></div>
 
-## 黄金VIP
+  <article id="black-iron" class="membership-package"><header><div><p class="membership-package-label">永久会员礼包</p><h3>黑铁VIP</h3></div><p>¥ 38</p></header><div class="membership-package-body"><figure><img src="/vip/black-iron-vip.png" alt="黑铁VIP礼包预览" loading="lazy"><figcaption>黑铁VIP礼包预览</figcaption></figure><div class="membership-package-content"><h4>会员权益</h4><ul class="membership-benefits"><li>最大家数量 +3</li><li>黑铁VIP专属特效</li><li>黑铁VIP专属称号</li></ul><h4>礼包物品</h4><div class="membership-item-groups"><section><h5>AE2</h5><p>256K存储元件、外壳、合成单元 ×16；ME接口、样板供应器、控制器 ×16；ME线缆 ×64；无线终端、无线信号增幅器、无线信号接口；无限圆石 / 水 / 熔岩元件。</p></section><section><h5>精华与无尽</h5><p>初级精华 ×32；高级精华 ×16；高级精华 ×8；基础中子态素收集器。</p></section><section><h5>工业升级</h5><p>质子太阳能；太阳能升级组件各 ×4；变压升级 ×32；基础超频 ×32；基础等级轧机、挤压、挤出、粉碎 / 提取、合金炉、固体制冷、储能器；冷却线缆 ×64；电缆 ×64。</p></section><section><h5>MEK</h5><p>精英等级富集、粉碎、熔炼、净化、提纯、种植机器；电缆 ×64；强化速度 / 能量升级 ×32；MEK多元宇宙等级安装器；大型风力发电机；燃气发电机 ×8。</p></section><section><h5>工具与拔刀剑</h5><p>黑曜石镐尖斧（效率 XX、时运 X）；神威刀坎纳；耀魂碎片 ×64。</p></section></div></div></div></article>
 
-<section class="vip-card vip-tier">
-  <div class="vip-tier-header"><h3>黄金VIP</h3><span class="price">¥ 138</span></div>
-  <div class="vip-tier-content">
-    <div><h4>VIP 权益</h4><ul><li>最大家数量 +8</li><li>传送无延迟</li><li>黄金VIP专属特效</li><li>黄金VIP专属称号</li><li>黄金VIP礼包</li></ul></div>
-    <div><div class="vip-gift-placeholder">VIP 礼包图片待补充</div><div class="vip-gift-list"><h4>VIP 礼包物品清单</h4><p>礼包物品清单待补充。</p></div></div>
-  </div>
+  <article id="bronze" class="membership-package"><header><div><p class="membership-package-label">永久会员礼包</p><h3>青铜VIP</h3></div><p>¥ 68</p></header><div class="membership-package-body"><figure><img src="/vip/bronze-vip.png" alt="青铜VIP礼包预览" loading="lazy"><figcaption>青铜VIP礼包预览</figcaption></figure><div class="membership-package-content"><h4>会员权益</h4><ul class="membership-benefits"><li>最大家数量 +5</li><li>传送无延迟</li><li>青铜VIP专属特效与称号</li></ul><h4>礼包物品</h4><div class="membership-item-groups"><section><h5>重要</h5><p>加速火把。</p></section><section><h5>AE2</h5><p>256M存储元件、外壳、合成单元 ×32；ME接口、过载、扩展、样板供应器、控制器 ×32；ME线缆 ×64；过载控制器 ×8；无线终端、无线信号增幅器、无线信号接口；量子套；无限圆石 / 水 / 熔岩元件。</p></section><section><h5>精华与无尽</h5><p>初级精华 ×32；高级精华 ×32；高级精华 ×16；基础中子态素收集器 ×4。</p></section><section><h5>工业升级</h5><p>奇异太阳能；太阳能组件各 ×4；变压升级 ×32；基础超频 ×64；改良等级轧机、挤压、挤出、粉碎、提取、合金、固体制冷、储能、分子重构仪；冷却线缆 ×64；电缆 ×64。</p></section><section><h5>MEK</h5><p>绝对等级富集、粉碎、熔炼、净化、提纯、种植机器；电缆 ×64；强化速度 / 能量升级 ×64；MEK多元宇宙等级安装器 ×4；大型风力发电机；燃气发电机 ×8。</p></section><section><h5>工具与拔刀剑</h5><p>黑曜石镐尖斧（效率 XX、时运 X）；灵钢刃「技术革新」；耀魂碎片 ×64。</p></section></div></div></div></article>
+
+  <article id="gold" class="membership-package featured-package"><header><div><p class="membership-package-label">推荐 · 永久会员礼包</p><h3>黄金VIP</h3></div><p>¥ 138</p></header><div class="membership-package-body"><figure><img src="/vip/gold-vip.png" alt="黄金VIP礼包预览" loading="lazy"><figcaption>黄金VIP礼包预览</figcaption></figure><div class="membership-package-content"><h4>会员权益</h4><ul class="membership-benefits"><li>最大家数量 +8</li><li>传送无延迟</li><li>黄金VIP专属特效与称号</li></ul><h4>礼包物品</h4><div class="membership-item-groups"><section><h5>重要</h5><p>加速火把。</p></section><section><h5>AE2</h5><p>量子存储元件；量子计算机；ME接口、过载、扩展、样板供应器、控制器 ×64；ME线缆 ×64；过载控制器 ×16；无线终端、无线信号增幅器、无线信号接口；量子套；无限圆石 / 水 / 熔岩。</p></section><section><h5>精华与无尽</h5><p>初级精华 ×32；高级精华 ×32；高级精华 ×32；致密中子态素收集器 ×1；万魂之核。</p></section><section><h5>工业升级</h5><p>衍射太阳能；太阳能组件各 ×4；变压升级 ×32；高级超频 ×64；性能升级 ×16；QE / EF转换器；高级等级轧机、挤压、挤出、粉碎、提取、合金、固体制冷、储能、分子重构仪、高级分子重构仪、复制机四件套、光子量子生成机、量子储能；冷却线缆 ×64；电缆 ×64；量子电缆 ×64。</p></section><section><h5>MEK</h5><p>至尊等级富集、粉碎、熔炼、净化、提纯、种植、复制机、反质子核合成器；电缆 ×64；强化速度 / 能量升级 ×64；MEK多元宇宙等级安装器 ×8；创造等级安装器；大型风力发电机；燃气发电机 ×8。</p></section><section><h5>工具与拔刀剑</h5><p>黑曜石镐尖斧（效率 XX、时运 X）；灵钢刃「技术革新」；耀魂碎片 ×64。</p></section></div></div></div></article>
+
+  <article id="diamond" class="membership-package"><header><div><p class="membership-package-label">永久会员礼包</p><h3>钻石VIP</h3></div><p>¥ 328</p></header><div class="membership-package-body"><figure><img src="/vip/diamond-vip.png" alt="钻石VIP礼包预览" loading="lazy"><figcaption>钻石VIP礼包预览</figcaption></figure><div class="membership-package-content"><h4>会员权益</h4><ul class="membership-benefits"><li>最大家数量 +12</li><li>传送无延迟、无冷却</li><li>钻石VIP专属特效与称号</li></ul><h4>礼包物品</h4><div class="membership-item-groups"><section><h5>重要</h5><p>压缩加速火把 ×1。</p></section><section><h5>AE2</h5><p>无限存储元件；满配量子计算机；ME接口、过载、扩展、样板供应器、控制器 ×64；ME线缆 ×64；过载控制器 ×16；无线终端、无线信号增幅器、无线信号接口；MeKa套；无限圆石 / 水 / 熔岩元件。</p></section><section><h5>精华与无尽</h5><p>全类型作物种子；创造无限创造营养液；精英中子态素收集器 ×2；精英中子态素压缩机 ×1；终焉工作台 ×1。</p></section><section><h5>工业升级</h5><p>重子太阳能；太阳能组件各 ×4；变压升级 ×32；高级超频 ×64；性能升级 ×16；堆叠 / 瞬时 ×16；QE / EF转换器；完美级轧机、挤压、挤出、粉碎、提取、合金、固体制冷、储能、分子重构仪、高级分子重构仪、复制机四件套、中子量子生成机、量子储能；冷却线缆 ×64；电缆 ×64；量子电缆 ×64；创造UU物质。</p></section><section><h5>MEK</h5><p>悖论无限等级富集、粉碎、熔炼、净化、提纯、种植、复制机、反质子核合成器；电缆 ×64；强化速度 / 能量升级 ×64；MEK多元宇宙等级安装器 ×8；创造等级安装器 ×8；创造升级；创造FE能源。</p></section><section><h5>工具与扩展</h5><p>黑曜石镐尖斧（效率 XX、时运 X）；神钢刃「血腥革新」；耀魂碎片 ×64；植物魔法创造魔力池；龙研混沌碎片 ×64。</p></section></div></div></div></article>
+
+  <article id="infinity" class="membership-package infinity-package"><header><div><p class="membership-package-label">最高等级 · 永久会员礼包</p><h3>寰宇VIP</h3></div><p>¥ 648</p></header><div class="membership-package-body"><figure><img src="/vip/infinity-vip.png" alt="寰宇VIP礼包预览" loading="lazy"><figcaption>寰宇VIP礼包预览</figcaption></figure><div class="membership-package-content"><h4>会员权益</h4><ul class="membership-benefits"><li>最大家数量 +16</li><li>传送无延迟、无冷却</li><li>寰宇VIP专属特效与称号</li></ul><h4>礼包物品</h4><div class="membership-item-groups"><section><h5>重要</h5><p>压缩加速火把 ×2；时序钟；区块加载器；永恒奇点 ×8；无尽催化剂 ×4；无限元件：矿石。</p></section><section><h5>AE2</h5><p>无限存储元件；满配量子计算机；ME接口、过载、扩展、样板供应器、控制器 ×64；ME线缆 ×64；过载控制器 ×16；无线终端、无线信号增幅器、无线信号接口；MeKa套；无限圆石 / 水 / 熔岩。</p></section><section><h5>精华与无尽</h5><p>全类型作物种子；创造营养液；极限中子态素收集器 ×4；极限中子态素压缩机 ×4；终焉工作台 ×2。</p></section><section><h5>工业升级</h5><p>引力子太阳能；太阳能组件各 ×4；变压升级 ×32；高级超频 ×64；性能升级 ×64；堆叠 / 瞬时 ×64；QE / EF转换器；IU光子级轧机、挤压、挤出、粉碎、提取、合金、固体制冷、储能、分子重构仪、高级分子重构仪、复制机四件套、引力子量子生成机、量子储能；冷却线缆 ×64；电缆 ×64；量子电缆 ×64；创造UU物质；固态物质复制机；固态物质转化机。</p></section><section><h5>MEK</h5><p>创造等级富集、粉碎、熔炼、净化、提纯、种植、复制机、流体复制机；电缆 ×64；强化速度 / 能量升级 ×64；MEK多元宇宙等级安装器 ×8；创造等级安装器 ×8；创造升级 ×2；创造FE能源；创造流体储罐；创造化学品储罐。</p></section><section><h5>工具与扩展</h5><p>黑曜石镐尖斧（效率 XX、时运 X）；神钢刃「血腥革新」；逆位「所罗门」；耀魂碎片 ×64；植物魔法创造魔力池；龙研混沌碎片 ×64。</p></section></div></div></div></article>
 </section>
 
-<!-- TODO: 黄金VIP礼包图片：docs/.vitepress/public/vip/gold-vip.png -->
+<section class="membership-section membership-faq" aria-labelledby="faq-title"><div class="membership-section-heading centered"><p class="membership-kicker">FAQ</p><h2 id="faq-title">常见问题</h2></div><div class="membership-faq-list"><details><summary>会员赞助是否会在后续周目保留？</summary><p>会。会员赞助与对应权益 100% 周目继承。</p></details><details><summary>低等级会员可以升级到高等级吗？</summary><p>可以。升级至高等级会员时补足差价即可；此前礼包会回收，已使用或丢失的旧礼包物品会从新礼包中扣除。</p></details><details><summary>会员如何使用点券购买？</summary><p>1 元可充值 10 点券。会员只能使用充值获得的点券进行购买。</p></details><details><summary>礼包物品可以交给其他玩家吗？</summary><p>会员礼包中的物品不得随意给予其他玩家使用；组队玩家不受此项限制。</p></details><details><summary>充值或礼包问题如何确认？</summary><p>请先联系腐竹核实对应等级、升级与礼包发放情况，避免因信息不完整造成误会。</p></details></div></section>
 
-## 钻石VIP
+<section class="membership-cta" aria-labelledby="cta-title"><h2 id="cta-title">准备好选择你的会员等级了吗？</h2><p>查看对应等级权益与礼包详情，再选择适合自己的支持方式。</p><div><a class="membership-button mint" href="#vip-tiers">查看 VIP 等级</a><a class="membership-button dark-outline" href="#membership-rules">查看赞助说明</a></div><p class="membership-contact">联系腐竹 QQ：<code>2602346931</code></p><CopyQQButton /></section>
 
-<section class="vip-card vip-tier">
-  <div class="vip-tier-header"><h3>钻石VIP</h3><span class="price">¥ 328</span></div>
-  <div class="vip-tier-content">
-    <div><h4>VIP 权益</h4><ul><li>最大家数量 +12</li><li>传送无延迟</li><li>传送无冷却</li><li>钻石VIP专属特效</li><li>钻石VIP专属称号</li><li>钻石VIP礼包</li></ul></div>
-    <div><div class="vip-gift-placeholder">VIP 礼包图片待补充</div><div class="vip-gift-list"><h4>VIP 礼包物品清单</h4><p>礼包物品清单待补充。</p></div></div>
-  </div>
-</section>
-
-<!-- TODO: 钻石VIP礼包图片：docs/.vitepress/public/vip/diamond-vip.png -->
-
-## 寰宇VIP
-
-<section class="vip-card vip-tier">
-  <div class="vip-tier-header"><h3>寰宇VIP</h3><span class="price">¥ 648</span></div>
-  <div class="vip-tier-content">
-    <div><h4>VIP 权益</h4><ul><li>最大家数量 +16</li><li>传送无延迟</li><li>传送无冷却</li><li>寰宇VIP专属特效</li><li>寰宇VIP专属称号</li><li>寰宇VIP礼包</li></ul></div>
-    <div><div class="vip-gift-placeholder">VIP 礼包图片待补充</div><div class="vip-gift-list"><h4>VIP 礼包物品清单</h4><p>礼包物品清单待补充。</p></div></div>
-  </div>
-</section>
-
-<!-- TODO: 寰宇VIP礼包图片：docs/.vitepress/public/vip/infinity-vip.png -->
-
-## 鸣谢名单
-
-感谢所有游玩、支持与体验无限工程服务器的玩家。
-
-感谢以下玩家对无限工程长期运营与发展的支持。
-
-| 玩家名 | 日期 | 备注 |
-| :--- | :---: | :--- |
-| huakai |  |  |
-| Lucky_KingS |  |  |
-| DustS |  |  |
-| Rineeeeee |  |  |
-| PKQ |  |  |
-| XingH__ |  |  |
-| ice |  |  |
+<section class="membership-thanks" aria-labelledby="thanks-title"><h2 id="thanks-title">鸣谢名单</h2><p>感谢所有游玩、支持与体验无限工程服务器的玩家。以下玩家为服务器的长期运营与发展提供了额外支持。</p><ul><li>huakai</li><li>Lucky_KingS</li><li>DustS</li><li>Rineeeeee</li><li>PKQ</li><li>XingH__</li><li>ice</li></ul></section>
