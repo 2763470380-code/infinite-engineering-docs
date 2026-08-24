@@ -23,7 +23,8 @@ export default defineConfig({
       { text: '规则', link: '/rules/' },
       { text: '常见问题', link: '/faq/' },
       { text: '会员赞助', link: '/sponsor/' },
-      { text: '更新日志', link: '/changelog/' }
+      { text: '更新日志', link: '/changelog/' },
+      { text: '关于与鸣谢', link: '/about/' }
     ],
     // 仓库创建后取消注释并填入真实链接，VitePress 会将其显示在右上角。
     // socialLinks: [{ icon: 'github', link: 'https://github.com/你的组织/你的仓库' }],

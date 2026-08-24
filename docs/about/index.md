@@ -23,7 +23,7 @@ outline: false
   <div class="about-section-heading">
     <p class="glass-kicker">SPECIAL THANKS</p>
     <h2 id="supporters-title">特别鸣谢</h2>
-    <p>以下玩家通过赞助，为无限工程的长期运营与发展提供了额外支持。</p>
+    <p>感谢以下玩家在无限工程的成长过程给予特别的支持与信任。</p>
   </div>
   <ul class="about-player-list">
     <li>huakai</li>

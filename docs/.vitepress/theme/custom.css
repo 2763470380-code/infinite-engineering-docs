@@ -1306,6 +1306,38 @@ html .Layout:not(.membership-page) .VPHero .name {
   -webkit-text-fill-color: #e4b863;
 }
 
+/* 权益对比表固定使用深色玻璃：浅色外观也不会出现白底白字。 */
+.membership-page .membership-table-wrap {
+  border-color: rgba(255, 255, 255, .18) !important;
+  background: rgba(5, 11, 20, .78) !important;
+  box-shadow: var(--glass-shadow) !important;
+}
+.membership-page .membership-table-wrap table,
+.membership-page .membership-table-wrap thead,
+.membership-page .membership-table-wrap tbody,
+.membership-page .membership-table-wrap tr {
+  background: transparent !important;
+}
+.membership-page .membership-table-wrap th,
+.membership-page .membership-table-wrap td {
+  border-color: rgba(255, 255, 255, .13) !important;
+  color: rgba(255, 255, 255, .76) !important;
+  background: rgba(255, 255, 255, .025) !important;
+}
+.membership-page .membership-table-wrap thead th,
+.membership-page .membership-table-wrap tbody th {
+  color: #fff !important;
+  background: rgba(255, 255, 255, .075) !important;
+}
+.membership-page .membership-table-wrap tbody tr:nth-child(even) td,
+.membership-page .membership-table-wrap tbody tr:nth-child(even) th {
+  background: rgba(255, 255, 255, .045) !important;
+}
+.membership-page .membership-table-wrap .highlight {
+  color: var(--champagne) !important;
+  background: rgba(228, 184, 99, .1) !important;
+}
+
 /* 独立鸣谢页：让玩家感谢与赞助名单脱离会员购买页面。 */
 .about-page .about-message,
 .about-page .about-supporters {
