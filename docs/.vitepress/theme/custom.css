@@ -1305,3 +1305,35 @@ html .Layout:not(.membership-page) .VPHero .name {
   color: #e4b863 !important;
   -webkit-text-fill-color: #e4b863;
 }
+
+/* 独立鸣谢页：让玩家感谢与赞助名单脱离会员购买页面。 */
+.about-page .about-message,
+.about-page .about-supporters {
+  position: relative;
+  margin: 28px 0;
+  padding: 34px;
+  border: 1px solid var(--glass-border);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, .065);
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+}
+.about-page .about-message { display: grid; grid-template-columns: 78px minmax(0, 1fr); gap: 24px; }
+.about-page .about-message-index { margin: 0 !important; color: var(--champagne) !important; font-size: 28px !important; font-weight: 750; letter-spacing: -.06em; }
+.about-page .about-message h2,
+.about-page .about-section-heading h2 { margin: 0 0 14px !important; padding: 0 !important; border: 0 !important; background: transparent !important; box-shadow: none !important; color: #fff !important; font-size: clamp(27px, 4vw, 38px) !important; }
+.about-page .about-message p { max-width: 730px; margin: 0 0 13px !important; color: rgba(255, 255, 255, .78) !important; font-size: 16px; line-height: 1.85; }
+.about-page .about-message p:last-child { margin-bottom: 0 !important; }
+.about-page .about-section-heading { max-width: 670px; }
+.about-page .about-section-heading > p:last-child { margin: 0 !important; color: rgba(255, 255, 255, .72) !important; line-height: 1.75; }
+.about-page .about-player-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 27px 0 0; padding: 0; list-style: none; }
+.about-page .about-player-list li { display: flex; min-height: 54px; align-items: center; justify-content: center; margin: 0 !important; padding: 12px; border: 1px solid rgba(255, 255, 255, .12); border-radius: 12px; color: #fff; background: rgba(255, 255, 255, .055); font-size: 14px; font-weight: 650; line-height: 1.25; text-align: center; transition: transform .3s var(--glass-spring), background-color .3s var(--glass-spring), border-color .3s var(--glass-spring); }
+.about-page .about-player-list li:hover { border-color: rgba(228, 184, 99, .48); background: rgba(228, 184, 99, .1); transform: translateY(-3px); }
+@media (max-width: 640px) {
+  .about-page .about-message,
+  .about-page .about-supporters { padding: 25px 20px; border-radius: 18px; }
+  .about-page .about-message { grid-template-columns: 1fr; gap: 12px; }
+  .about-page .about-message-index { font-size: 21px !important; }
+  .about-page .about-player-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+}

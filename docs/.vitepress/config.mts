@@ -39,7 +39,8 @@ export default defineConfig({
         text: '服务器',
         items: [
           { text: '服务器规则', link: '/rules/' },
-          { text: '常见问题', link: '/faq/' }
+          { text: '常见问题', link: '/faq/' },
+          { text: '关于与鸣谢', link: '/about/' }
         ]
       },
       {
@@ -72,7 +73,7 @@ export default defineConfig({
     lightModeSwitchTitle: '切换为浅色模式',
     darkModeSwitchTitle: '切换为深色模式',
     footer: {
-      message: '无限工程官方文档 · INFINITE DOCUMENTATION',
+      message: '<a href="/about/">关于与鸣谢</a> · 无限工程官方文档 · INFINITE DOCUMENTATION',
       copyright: '服务器信息与内容持续更新中'
     }
   }
