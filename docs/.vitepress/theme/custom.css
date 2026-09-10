@@ -1300,6 +1300,41 @@ body { background: var(--night-deep); }
 .membership-package#diamond { border-color: rgba(110, 175, 255, .52); }
 .membership-package#infinity { border-color: rgba(238, 117, 110, .52); }
 
+/* 礼包清单重构：重要物品是信息行，详细物品是两列可扫读清单。 */
+.membership-page .membership-package-inventory { margin-top: 34px; padding-top: 28px; border-top: 1px solid rgba(255, 255, 255, .12); }
+.membership-page .membership-package-inventory > h4 { margin: 0 0 23px; color: #fff; font-size: 23px; }
+.membership-page .membership-important-items { padding: 22px 24px; border: 1px solid rgba(255, 255, 255, .1); border-radius: 16px; background: rgba(255, 255, 255, .025); }
+.membership-page .membership-important-items > h5,
+.membership-page .membership-detailed-items > h5 { margin: 0 0 15px; color: var(--champagne); font-size: 14px; font-weight: 750; letter-spacing: .08em; }
+.membership-page .membership-important-row { display: grid; grid-template-columns: minmax(190px, .82fr) minmax(0, 2fr); gap: 22px; padding: 11px 0; border-bottom: 1px solid rgba(255, 255, 255, .07); }
+.membership-page .membership-important-row:last-child { border-bottom: 0; }
+.membership-page .membership-important-row strong { color: var(--champagne); font-size: 14px; font-weight: 700; line-height: 1.65; }
+.membership-page .membership-important-row span { color: rgba(236, 242, 248, .72); font-size: 14px; line-height: 1.65; }
+.membership-page .membership-detailed-items { margin-top: 28px; }
+.membership-page .membership-inventory-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; padding: 0; }
+.membership-page .membership-inventory-category { min-width: 0; padding: 20px 21px; border: 1px solid rgba(255, 255, 255, .08); border-radius: 15px; background: rgba(255, 255, 255, .028); }
+.membership-page .membership-inventory-category h6 { margin: 0 0 13px; color: var(--champagne); font-size: 14px; font-weight: 700; }
+.membership-page .item-detail-list { display: grid; gap: 2px; margin: 0; padding: 0; list-style: none; }
+.membership-page .item-detail-list li { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 16px; min-height: 30px; margin: 0; padding: 3px 5px; border-radius: 7px; color: rgba(237, 242, 248, .78); font-size: 13px; line-height: 1.45; transition: background-color .22s ease; }
+.membership-page .item-detail-list li:hover { background: rgba(255, 255, 255, .055); }
+.membership-page .item-detail-list li > span { min-width: 0; overflow-wrap: anywhere; }
+.membership-page .item-detail-list li > strong { color: var(--champagne); font-size: 12px; font-weight: 700; white-space: nowrap; }
+/* 清除旧版胶囊/角标样式，避免新结构受到遗留样式影响。 */
+.membership-page .membership-package .item-chip-grid,
+.membership-page .membership-package .item-chip,
+.membership-page .membership-package .membership-inventory-description { display: none !important; }
+.membership-page .membership-benefits { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.membership-page .membership-benefits li { min-height: 118px; align-items: center; justify-content: center; padding: 16px; text-align: center; }
+.membership-page .membership-benefits li > span:last-child { justify-items: center; }
+.membership-page .membership-benefits strong { color: #fff; }
+.membership-page .membership-benefits small { text-align: center; }
+@media (max-width: 720px) {
+  .membership-page .membership-important-items { padding: 18px 16px; }
+  .membership-page .membership-important-row { grid-template-columns: 1fr; gap: 2px; padding: 12px 0; }
+  .membership-page .membership-inventory-grid { grid-template-columns: 1fr; }
+  .membership-page .membership-benefits { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
 /* 最终覆盖：首页主标题固定为会员页同款香槟黄，避免默认品牌蓝回退。 */
 html .Layout:not(.membership-page) .VPHero .name {
   color: #e4b863 !important;
