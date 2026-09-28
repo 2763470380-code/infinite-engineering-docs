@@ -330,6 +330,297 @@ body { letter-spacing: -.01em; -webkit-font-smoothing: antialiased; text-renderi
   .membership-page *, .membership-page *::before, .membership-page *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
 }
 
+/* 会员赞助页：暖白与香槟金视觉，严格限定在当前页面 */
+.Layout:has(.membership-page) {
+  --vp-c-bg: #f7f6f3;
+  --vp-c-bg-alt: #f0efec;
+  --vp-c-bg-soft: #eeece7;
+  --vp-c-text-1: #262522;
+  --vp-c-text-2: #625f58;
+  --vp-c-brand-1: #a47a36;
+  --vp-c-brand-2: #8e682c;
+  --vp-c-brand-3: #785522;
+  background: #f7f6f3;
+}
+.dark .Layout:has(.membership-page) {
+  --vp-c-bg: #f7f6f3;
+  --vp-c-bg-alt: #f0efec;
+  --vp-c-bg-soft: #eeece7;
+  --vp-c-text-1: #262522;
+  --vp-c-text-2: #625f58;
+  --vp-c-brand-1: #a47a36;
+  --vp-c-brand-2: #8e682c;
+  --vp-c-brand-3: #785522;
+  background: #f7f6f3;
+}
+.Layout:has(.membership-page) .VPNav {
+  border-bottom-color: rgba(55, 48, 38, .12);
+  background: rgba(250, 249, 247, .92);
+  box-shadow: none;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+.Layout:has(.membership-page) .VPNavBar .title,
+.Layout:has(.membership-page) .VPNavBarMenuLink,
+.Layout:has(.membership-page) .VPNavBarAppearanceButton { color: #302d28; }
+.Layout:has(.membership-page) .VPNavBarMenuLink:hover,
+.Layout:has(.membership-page) .VPNavBarMenuLink.active { color: #946b2d; }
+
+.membership-page {
+  --membership-ink: #292722;
+  --membership-muted: #68645d;
+  --membership-quiet: #f4f2ed;
+  --membership-surface: #fff;
+  --membership-border: #dedbd4;
+  --membership-accent: #a47a36;
+  --membership-accent-hover: #8e682c;
+  --membership-deep: #2d2a24;
+  --membership-shadow: 0 5px 18px rgba(43, 37, 27, .055);
+  color: var(--membership-ink);
+  background: #f7f6f3;
+}
+.dark .membership-page {
+  --membership-ink: #292722;
+  --membership-muted: #68645d;
+  --membership-quiet: #f4f2ed;
+  --membership-surface: #fff;
+  --membership-border: #dedbd4;
+  --membership-accent: #a47a36;
+  --membership-accent-hover: #8e682c;
+  --membership-deep: #2d2a24;
+  --membership-shadow: 0 5px 18px rgba(43, 37, 27, .055);
+  background: #f7f6f3;
+}
+.membership-page .VPDoc { padding: 0 0 64px; }
+.membership-page .vp-doc { max-width: none; margin: 0; color: var(--membership-ink); }
+.membership-page .vp-doc h1,
+.membership-page .vp-doc h2,
+.membership-page .vp-doc h3,
+.membership-page .vp-doc h4,
+.membership-page .vp-doc h5 { color: var(--membership-ink); font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "PingFang SC", "Microsoft YaHei", sans-serif; }
+.membership-page .vp-doc p { color: var(--membership-muted); }
+.membership-page .vp-doc a { color: inherit; }
+
+.membership-hero {
+  position: relative;
+  display: flex;
+  min-height: 520px;
+  max-width: none;
+  margin: 0;
+  padding: clamp(88px, 11vw, 148px) 24px 62px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #ece9e3;
+  background-image: linear-gradient(180deg, rgba(250, 249, 247, .34), rgba(250, 249, 247, .54)), url("/images/membership-infinity-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+.membership-eyebrow { padding: 0; border: 0; border-radius: 0; color: #6c6250 !important; background: transparent; font-size: 12px; letter-spacing: .18em; }
+.membership-hero h1 { max-width: 850px; margin: 18px auto 16px !important; color: #292722 !important; font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "PingFang SC", "Microsoft YaHei", sans-serif; font-size: clamp(42px, 6.4vw, 76px) !important; font-weight: 760; letter-spacing: -.065em; line-height: 1.04; }
+.membership-hero h1 span { color: var(--membership-accent); }
+.membership-lede { max-width: 620px; margin: 0 auto !important; color: #555149 !important; font-size: clamp(16px, 2vw, 19px); }
+.membership-hero-actions { margin-top: 28px; }
+.membership-button.primary { color: #fff; background: #9d742f; }
+.membership-button.primary:hover { background: #815d25; }
+.membership-button.secondary { border-color: rgba(54, 48, 38, .24); color: #302d28; background: rgba(255, 255, 255, .42); }
+.membership-button.secondary:hover { border-color: #9d742f; color: #815d25; background: rgba(255, 255, 255, .7); }
+.membership-hero-facts { margin: 30px 0 0 !important; color: #5d584e !important; font-size: 13px; font-weight: 600; letter-spacing: .04em; }
+.membership-hero-facts span { padding: 0 8px; color: #a47a36; }
+
+.membership-section,
+.membership-facts,
+.membership-cta { width: min(1160px, calc(100% - 64px)); }
+.membership-section { padding: 72px 0; }
+.membership-section-heading { max-width: 700px; margin-bottom: 28px; }
+.membership-section-heading h2 { margin: 0 0 10px !important; font-size: clamp(28px, 3.6vw, 42px) !important; font-weight: 720; letter-spacing: -.055em; }
+.membership-section-heading p:last-child { color: var(--membership-muted); font-size: 15px; }
+.membership-kicker { display: none; }
+.membership-rules { padding-top: 64px; }
+.membership-policy-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 30px; border-top: 1px solid var(--membership-border); border-bottom: 1px solid var(--membership-border); }
+.membership-policy-grid article { min-height: auto; padding: 22px 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+.membership-policy-grid article + article { border-left: 1px solid var(--membership-border); padding-left: 30px; }
+.membership-policy-grid h3 { font-size: 18px !important; }
+.membership-policy-grid p { margin-top: 8px !important; }
+.membership-notice { margin-top: 14px; padding: 13px 16px; border: 0; border-left: 3px solid #b18a4b; border-radius: 0; color: #4e493f; background: #efede7; }
+
+.membership-tier-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; align-items: stretch; }
+.membership-tier-card {
+  min-width: 0;
+  min-height: 310px;
+  padding: 23px 19px 19px;
+  border: 1px solid #dedbd4;
+  border-radius: 14px;
+  color: var(--membership-ink);
+  background: rgba(255, 255, 255, .8);
+  box-shadow: none;
+  cursor: pointer;
+  transition: border-color .22s ease, background-color .22s ease, transform .22s ease;
+}
+.membership-tier-card:hover { border-color: #b59a6b; background: #fff; box-shadow: none; transform: translateY(-2px); }
+.membership-tier-card:active { transform: translateY(0); }
+.membership-tier-card h3 { font-size: 19px !important; }
+.membership-tier-summary { min-height: 58px; margin-top: 8px !important; font-size: 13px; }
+.membership-tier-price { margin: 14px 0 14px !important; color: #8e682c !important; font-size: 28px; }
+.membership-tier-card ul { display: grid; gap: 5px; margin: auto 0 16px; padding: 0; color: #5f5b54; font-size: 12px; line-height: 1.55; list-style: none; }
+.membership-tier-card li { margin: 0; }
+.membership-tier-card.featured { border-color: #b28a48; background: #fbf8f1; transform: translateY(-5px); }
+.membership-tier-card.featured:hover { box-shadow: none; transform: translateY(-7px); }
+.membership-tier-card.featured h3,
+.membership-tier-card.featured .membership-tier-price { color: #805e2a !important; }
+.membership-tier-card.featured .membership-tier-summary,
+.membership-tier-card.featured ul { color: #62594a !important; }
+.membership-recommended { margin: -8px 0 10px !important; padding: 0; color: #8e682c !important; background: transparent; font-size: 11px; letter-spacing: .02em; }
+.membership-tier-card.infinity { box-shadow: none; }
+.membership-card-link { min-height: 38px; margin: auto 0 0; border: 1px solid #d9d4ca; border-radius: 8px; color: #554a38 !important; background: transparent; font-size: 13px; }
+.membership-card-link:hover { border-color: #a47a36; color: #815d25 !important; background: #f4efe4; }
+.membership-tier-card.featured .membership-card-link { border-color: #9d742f; color: #fff !important; background: #9d742f; }
+.membership-tier-card.featured .membership-card-link:hover { background: #815d25; }
+
+.membership-levels { position: relative; }
+.membership-tier-input { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
+.membership-tier-tabs { display: flex; gap: 6px; margin: 28px 0 24px; overflow-x: auto; border-bottom: 1px solid var(--membership-border); scrollbar-width: thin; }
+.membership-tier-tabs label { display: inline-flex; min-height: 46px; padding: 0 17px; flex: 0 0 auto; align-items: center; border-bottom: 2px solid transparent; color: #6b675f; font-size: 14px; font-weight: 620; cursor: pointer; }
+.membership-tier-tabs label:hover { color: #815d25; }
+#vip-tier-black-iron:focus-visible ~ .membership-details .membership-tier-tabs label[for="vip-tier-black-iron"],
+#vip-tier-bronze:focus-visible ~ .membership-details .membership-tier-tabs label[for="vip-tier-bronze"],
+#vip-tier-gold:focus-visible ~ .membership-details .membership-tier-tabs label[for="vip-tier-gold"],
+#vip-tier-diamond:focus-visible ~ .membership-details .membership-tier-tabs label[for="vip-tier-diamond"],
+#vip-tier-infinity:focus-visible ~ .membership-details .membership-tier-tabs label[for="vip-tier-infinity"] { outline: 3px solid rgba(164, 122, 54, .35); outline-offset: 2px; }
+#vip-tier-black-iron:checked ~ #vip-tiers .membership-tier-grid label[for="vip-tier-black-iron"],
+#vip-tier-bronze:checked ~ #vip-tiers .membership-tier-grid label[for="vip-tier-bronze"],
+#vip-tier-gold:checked ~ #vip-tiers .membership-tier-grid label[for="vip-tier-gold"],
+#vip-tier-diamond:checked ~ #vip-tiers .membership-tier-grid label[for="vip-tier-diamond"],
+#vip-tier-infinity:checked ~ #vip-tiers .membership-tier-grid label[for="vip-tier-infinity"] { border-color: #a47a36; }
+#vip-tier-black-iron:checked ~ .membership-details .membership-tier-tabs label[for="vip-tier-black-iron"],
+#vip-tier-bronze:checked ~ .membership-details .membership-tier-tabs label[for="vip-tier-bronze"],
+#vip-tier-gold:checked ~ .membership-details .membership-tier-tabs label[for="vip-tier-gold"],
+#vip-tier-diamond:checked ~ .membership-details .membership-tier-tabs label[for="vip-tier-diamond"],
+#vip-tier-infinity:checked ~ .membership-details .membership-tier-tabs label[for="vip-tier-infinity"] { border-bottom-color: #a47a36; color: #815d25; }
+.membership-tab-panel { display: none; }
+#vip-tier-black-iron:checked ~ .membership-details .membership-tab-panels .panel-black-iron,
+#vip-tier-bronze:checked ~ .membership-details .membership-tab-panels .panel-bronze,
+#vip-tier-gold:checked ~ .membership-details .membership-tab-panels .panel-gold,
+#vip-tier-diamond:checked ~ .membership-details .membership-tab-panels .panel-diamond,
+#vip-tier-infinity:checked ~ .membership-details .membership-tab-panels .panel-infinity { display: block; }
+
+.membership-facts { margin: 0 auto; padding: 19px 0; border-top: 1px solid var(--membership-border); border-bottom: 1px solid var(--membership-border); color: #625d53; font-size: 13px; text-align: center; }
+.membership-comparison { padding-top: 64px; }
+.membership-comparison-disclosure { border-top: 1px solid var(--membership-border); border-bottom: 1px solid var(--membership-border); }
+.membership-comparison-disclosure > summary { display: flex; min-height: 60px; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 3px; color: var(--membership-ink); font-weight: 650; cursor: pointer; list-style: none; }
+.membership-comparison-disclosure > summary::-webkit-details-marker,
+.membership-comparison-disclosure > summary::marker { display: none; content: ""; }
+.membership-comparison-disclosure > summary::after { content: "+"; color: var(--membership-accent); font-size: 22px; font-weight: 400; }
+.membership-comparison-disclosure[open] > summary::after { content: "−"; }
+.membership-table-wrap { margin: 0 0 24px; border: 1px solid var(--membership-border); border-radius: 10px; background: #fff; box-shadow: none; }
+.membership-page .membership-table-wrap table { min-width: 660px; }
+.membership-table-wrap th,
+.membership-table-wrap td { border-bottom: 1px solid #e9e6df; color: #625f58; }
+.membership-table-wrap thead th,
+.membership-table-wrap tbody th { color: #302d28; background: #f3f1ec; }
+.membership-table-wrap tbody tr:nth-child(even) td,
+.membership-table-wrap tbody tr:nth-child(even) th { background: #faf9f6; }
+.membership-table-wrap .highlight { color: #8e682c; }
+
+.membership-details { padding-top: 72px; }
+.membership-package { margin: 24px 0 0; border: 1px solid var(--membership-border); border-radius: 14px; background: rgba(255, 255, 255, .88); box-shadow: none; }
+.membership-package > header { padding: 22px 26px; border-bottom-color: var(--membership-border); background: transparent; }
+.membership-package > header h3 { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "PingFang SC", "Microsoft YaHei", sans-serif; font-size: 27px !important; }
+.membership-package > header > p { color: #8e682c; font-size: 28px; }
+.membership-package-body { padding: 24px 26px; }
+.membership-package-overview { grid-template-columns: minmax(260px, .72fr) minmax(0, 1.28fr); gap: 28px; }
+.membership-package figure img { border-radius: 9px; box-shadow: none; }
+.membership-benefits { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 16px; }
+.membership-benefits li { min-height: 56px; padding: 10px 2px; border-bottom: 1px solid #e9e6df; border-radius: 0; background: transparent; }
+.membership-benefits li strong { color: #302d28; }
+.membership-benefits li small { color: #706b62; }
+.membership-package-inventory { margin-top: 24px; padding-top: 22px; border-top-color: var(--membership-border); }
+.membership-package-inventory > h4 { margin-bottom: 12px !important; font-size: 21px !important; }
+.membership-page .membership-important-items { padding: 15px 18px; border: 0; border-left: 2px solid #b18a4b; border-radius: 0; background: #f4f2ed; }
+.membership-page .membership-important-items > h5,
+.membership-page .membership-detailed-items > h5 { color: #8e682c; }
+.membership-page .membership-important-row { grid-template-columns: minmax(175px, .72fr) minmax(0, 2fr); gap: 16px; border-bottom-color: #e5e1d8; }
+.membership-page .membership-important-row strong { color: #39362f; }
+.membership-page .membership-important-row span { color: #68645d; }
+.membership-detailed-disclosure { margin-top: 18px; }
+.membership-detailed-disclosure > summary { border-color: #dedbd4; border-radius: 9px; color: #39362f; background: #f5f3ee; }
+.membership-detailed-disclosure > summary:hover { border-color: #a47a36; background: #efede7; }
+.membership-detailed-disclosure > summary > small { color: #777168; }
+.membership-page .membership-inventory-category { border-top-color: #e3dfd7; }
+.membership-page .membership-inventory-category h6 { color: #8e682c; }
+.membership-page .item-detail-list li { color: #555149; }
+.membership-page .item-detail-list li:hover { background: #f3f1ec; }
+.membership-page .item-detail-list li > strong { color: #8e682c; }
+
+.membership-faq { max-width: none; }
+.membership-faq-list { display: block; border-top: 1px solid var(--membership-border); }
+.membership-faq-list details { border: 0; border-bottom: 1px solid var(--membership-border); border-radius: 0; background: transparent; box-shadow: none; }
+.membership-faq-list summary { padding: 19px 38px 19px 2px; color: #302d28; font-size: 15px; }
+.membership-faq-list summary::after { right: 5px; }
+.membership-faq-list p { padding: 0 38px 18px 2px; color: #68645d; }
+.membership-cta { margin: 40px auto 10px; padding: 44px 24px; border: 1px solid var(--membership-border); border-radius: 14px; color: var(--membership-ink); background: #f1efe9; text-align: center; }
+.membership-cta h2 { color: var(--membership-ink) !important; font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "PingFang SC", "Microsoft YaHei", sans-serif; font-size: clamp(28px, 4vw, 40px) !important; }
+.membership-cta > p { color: var(--membership-muted) !important; }
+.membership-button.mint,
+.membership-page .membership-cta .copy-qq button { color: #fff; background: #9d742f; }
+.membership-button.mint:hover,
+.membership-page .membership-cta .copy-qq button:hover { background: #815d25; }
+.membership-button.dark-outline { border-color: #cbc5b9; color: #39362f; background: transparent; }
+.membership-button.dark-outline:hover { border-color: #a47a36; background: #e8e4da; }
+.membership-cta code { color: #39362f; }
+.membership-page .membership-cta .copy-qq-status { color: #68645d; }
+
+@media (max-width: 1100px) {
+  .membership-tier-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .membership-tier-card.featured { transform: none; }
+  .membership-tier-card.featured:hover { transform: translateY(-2px); }
+}
+@media (max-width: 800px) {
+  .membership-section,
+  .membership-facts,
+  .membership-cta { width: calc(100% - 48px); }
+  .membership-policy-grid { grid-template-columns: 1fr; }
+  .membership-policy-grid article + article { border-top: 1px solid var(--membership-border); border-left: 0; padding-left: 0; }
+  .membership-facts { grid-template-columns: 1fr; }
+  .membership-package-overview { grid-template-columns: minmax(0, 1fr); }
+  .membership-package figure { max-width: 440px; margin: 0 auto; }
+}
+@media (max-width: 640px) {
+  .membership-hero { min-height: 460px; padding: 72px 22px 48px; }
+  .membership-hero h1 { font-size: clamp(39px, 11vw, 54px) !important; }
+  .membership-lede { font-size: 16px; }
+  .membership-hero-facts { max-width: 300px; line-height: 1.9; }
+  .membership-hero-actions { width: min(320px, 100%); flex-direction: column; }
+  .membership-button { width: 100%; }
+  .membership-section,
+  .membership-facts,
+  .membership-cta { width: calc(100% - 36px); }
+  .membership-section { padding: 54px 0; }
+  .membership-rules { padding-top: 44px; }
+  .membership-tier-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .membership-tier-card { min-height: 295px; padding: 19px 15px 15px; }
+  .membership-tier-card h3 { font-size: 17px !important; }
+  .membership-tier-summary { min-height: 64px; font-size: 12px; }
+  .membership-tier-price { font-size: 24px; }
+  .membership-tier-card ul { font-size: 11px; }
+  .membership-tier-tabs { margin-top: 22px; }
+  .membership-tier-tabs label { min-height: 44px; padding: 0 13px; font-size: 13px; }
+  .membership-facts { padding: 15px 8px; line-height: 1.8; }
+  .membership-package { border-radius: 11px; }
+  .membership-package > header { align-items: center; padding: 18px; }
+  .membership-package > header h3 { font-size: 24px !important; }
+  .membership-package > header > p { font-size: 24px; }
+  .membership-package-body { padding: 18px; }
+  .membership-benefits { grid-template-columns: 1fr; }
+  .membership-page .membership-important-row { grid-template-columns: 1fr; gap: 2px; }
+  .membership-page .membership-inventory-grid { grid-template-columns: 1fr; }
+  .membership-comparison-disclosure > summary { align-items: flex-start; }
+  .membership-cta { margin-top: 26px; padding: 34px 18px; }
+  .membership-cta > div:not(.copy-qq) { flex-direction: column; }
+}
+
 /* 除会员页外：全屏 Hero 文档视觉系统 */
 .Layout:not(.membership-page) {
   --vp-c-bg: #081019;
@@ -1785,4 +2076,45 @@ html .Layout:not(.membership-page) .VPHero .name {
   .server-home-page .server-home *,
   .server-home-page .server-home *::before,
   .server-home-page .server-home *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
+
+/* 会员页覆盖全站旧玻璃交互规则，避免深色背景与重阴影透入浅色版。 */
+.Layout:has(.membership-page),
+.dark .Layout:has(.membership-page) { background: #f7f6f3 !important; }
+.Layout:has(.membership-page)::before,
+.Layout:has(.membership-page)::after { display: none !important; }
+.Layout:has(.membership-page) .VPNav { background: rgba(250, 249, 247, .94) !important; }
+.Layout:has(.membership-page) .VPNavBar .title,
+.Layout:has(.membership-page) .VPNavBarMenuLink,
+.Layout:has(.membership-page) .VPNavBarAppearanceButton { color: #302d28 !important; }
+.membership-page,
+.dark .membership-page { background: #f7f6f3 !important; color: #292722; }
+.membership-page .membership-benefits { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.membership-page .membership-benefits li { min-height: 56px; align-items: center; padding: 10px 2px; border: 0; border-bottom: 1px solid #e9e6df; border-radius: 0; background: transparent; text-align: left; }
+.membership-page .membership-benefits li:hover { border-color: #e9e6df !important; background: #f4f2ed !important; box-shadow: none !important; transform: none !important; }
+.membership-page .membership-benefits strong { color: #302d28 !important; text-align: left; }
+.membership-page .membership-benefits small { color: #706b62 !important; text-align: left; }
+.membership-page .membership-tier-card:hover { border-color: #a47a36 !important; background: #fff !important; box-shadow: none !important; transform: translateY(-2px) !important; }
+.membership-page .membership-tier-card.featured:hover { background: #fbf8f1 !important; }
+.membership-page .membership-policy-grid article:hover { border-color: transparent !important; background: transparent !important; box-shadow: none !important; transform: none !important; }
+.membership-page .membership-button:hover,
+.membership-page .membership-card-link:hover { box-shadow: none !important; transform: translateY(-1px) !important; }
+.membership-page .membership-package-inventory { margin-top: 24px; padding-top: 22px; }
+.membership-page .membership-package-inventory > h4 { margin-bottom: 12px !important; font-size: 21px !important; }
+.membership-page .membership-package-content > header { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; padding: 0 0 16px; border-bottom: 1px solid #dedbd4; background: transparent; }
+.membership-page .membership-package-content > header h3 { margin: 5px 0 0 !important; color: #292722 !important; font-size: clamp(25px, 3vw, 34px) !important; font-weight: 730; letter-spacing: -.05em; }
+.membership-page .membership-package-content > header > p { margin: 0 !important; color: #8e682c !important; font-size: 27px; font-weight: 720; white-space: nowrap; }
+.membership-page .membership-package-content .membership-package-label { color: #8e682c !important; font-size: 11px; letter-spacing: .08em; }
+.membership-page .membership-package-intro { margin: 14px 0 18px !important; color: #68645d !important; font-size: 14px; }
+.membership-page .membership-inventory-category h6 { color: #8e682c !important; }
+.membership-page .membership-inventory-category h5 { color: #8e682c !important; }
+.membership-page a:focus-visible,
+.membership-page button:focus-visible,
+.membership-page summary:focus-visible,
+.membership-page input:focus-visible { outline: 3px solid rgba(164, 122, 54, .38) !important; outline-offset: 3px; box-shadow: none !important; }
+@media (max-width: 640px) {
+  .membership-page .membership-benefits { grid-template-columns: 1fr; }
+  .membership-page .membership-package-content > header { align-items: flex-start; }
+  .membership-page .membership-package-content > header h3 { font-size: 24px !important; }
+  .membership-page .membership-package-content > header > p { font-size: 23px; }
 }

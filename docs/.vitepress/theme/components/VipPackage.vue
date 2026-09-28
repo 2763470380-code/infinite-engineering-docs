@@ -150,6 +150,7 @@ type PackageTier = keyof typeof packages
 const props = defineProps<{ tier: PackageTier }>()
 const current = computed(() => packages[props.tier])
 const detailedCategories = computed(() => current.value.categories.filter(category => category.items.length > 0))
+const giftItemCount = computed(() => detailedCategories.value.reduce((total, category) => total + category.items.length, 0))
 
 const benefitCards = computed(() => current.value.benefits.map((benefit) => {
   if (benefit.startsWith('最大家数量')) return { title: '专属家园', description: benefit }
@@ -168,14 +169,6 @@ const benefitCards = computed(() => current.value.benefits.map((benefit) => {
     class="membership-package"
     :class="{ 'featured-package': current.featured, 'infinity-package': current.infinity }"
   >
-    <header>
-      <div>
-        <p class="membership-package-label">{{ current.label }}</p>
-        <h3>{{ current.name }}</h3>
-      </div>
-      <p>{{ current.price }}</p>
-    </header>
-
     <div class="membership-package-body">
       <div class="membership-package-overview">
         <figure>
@@ -184,6 +177,14 @@ const benefitCards = computed(() => current.value.benefits.map((benefit) => {
         </figure>
 
         <section class="membership-package-content" aria-label="会员权益">
+          <header>
+            <div>
+              <p class="membership-package-label">{{ current.label }}</p>
+              <h3>{{ current.name }}</h3>
+            </div>
+            <p>{{ current.price }}</p>
+          </header>
+          <p class="membership-package-intro">包含 {{ current.name }} 对应的会员权益与专属礼包。</p>
           <h4>会员权益</h4>
           <ul class="membership-benefits">
             <li v-for="benefit in benefitCards" :key="benefit.description">
@@ -193,8 +194,8 @@ const benefitCards = computed(() => current.value.benefits.map((benefit) => {
         </section>
       </div>
 
-      <section class="membership-package-inventory" :aria-label="`${current.name}礼包物品清单`">
-        <h4>礼包物品清单</h4>
+      <section class="membership-package-inventory" :aria-label="`${current.name}礼包重点内容`">
+        <h4>礼包重点</h4>
         <section class="membership-important-items" aria-label="重要物品">
           <h5>重要物品</h5>
           <div v-for="item in current.importantItems" :key="item.name" class="membership-important-row">
@@ -204,7 +205,7 @@ const benefitCards = computed(() => current.value.benefits.map((benefit) => {
         </section>
 
         <details :key="current.id" class="membership-detailed-disclosure">
-          <summary>查看完整礼包物品清单</summary>
+          <summary><span>完整礼包物品清单</span><small>共 {{ giftItemCount }} 项</small></summary>
           <section class="membership-detailed-items" aria-label="详细物品">
             <h5>详细物品</h5>
             <div class="membership-inventory-grid">
@@ -237,14 +238,22 @@ const benefitCards = computed(() => current.value.benefits.map((benefit) => {
   justify-content: space-between;
   gap: 16px;
   padding: 12px 18px;
-  border: 1px solid rgba(255, 255, 255, .12);
+  border: 1px solid var(--membership-border, rgba(255, 255, 255, .12));
   border-radius: 12px;
-  color: var(--package-tier-color, var(--champagne, #e4b863));
-  background: rgba(255, 255, 255, .035);
+  color: var(--membership-ink, var(--package-tier-color, #e4b863));
+  background: var(--membership-quiet, rgba(255, 255, 255, .035));
   font-weight: 700;
   cursor: pointer;
   list-style: none;
   transition: background-color .2s ease, border-color .2s ease;
+}
+
+.membership-detailed-disclosure > summary > span { color: inherit; }
+
+.membership-detailed-disclosure > summary > small {
+  color: var(--membership-muted, currentColor);
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .membership-detailed-disclosure > summary::-webkit-details-marker,
@@ -264,8 +273,8 @@ const benefitCards = computed(() => current.value.benefits.map((benefit) => {
 }
 
 .membership-detailed-disclosure > summary:hover {
-  border-color: var(--package-tier-color, var(--champagne, #e4b863));
-  background: rgba(255, 255, 255, .06);
+  border-color: var(--membership-accent, var(--package-tier-color, #e4b863));
+  background: var(--membership-surface, rgba(255, 255, 255, .06));
 }
 
 .membership-detailed-disclosure > summary:focus-visible {
