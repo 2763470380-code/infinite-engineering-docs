@@ -2484,3 +2484,28 @@ html .Layout:not(.membership-page) .VPHero .name {
   .membership-page .membership-tier-card,
   .membership-page .membership-button { transition: none !important; }
 }
+
+/* Sponsor-only canvas: remove the fixed site wallpaper and let one platinum background span the full page. */
+body:has(.Layout.membership-page) {
+  background: linear-gradient(180deg, #f8f5ef 0%, #f3f0e9 55%, #f7f4ee 100%) !important;
+}
+.Layout.membership-page,
+.dark .Layout.membership-page {
+  background: linear-gradient(180deg, #f8f5ef 0%, #f3f0e9 55%, #f7f4ee 100%) !important;
+}
+.Layout.membership-page::before,
+.Layout.membership-page::after {
+  display: none !important;
+  content: none !important;
+  background: none !important;
+}
+.Layout.membership-page .VPContent,
+.Layout.membership-page .VPDoc,
+.Layout.membership-page .VPDoc.has-aside,
+.Layout.membership-page .vp-doc,
+.Layout.membership-page .VPDoc .container,
+.Layout.membership-page .VPDoc .content,
+.Layout.membership-page .VPDoc .content-container {
+  background: transparent !important;
+  background-image: none !important;
+}
