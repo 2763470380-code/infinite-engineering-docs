@@ -203,21 +203,77 @@ const benefitCards = computed(() => current.value.benefits.map((benefit) => {
           </div>
         </section>
 
-        <section class="membership-detailed-items" aria-label="详细物品">
-          <h5>详细物品</h5>
-          <div class="membership-inventory-grid">
-            <section v-for="category in detailedCategories" :key="category.name" class="membership-inventory-category">
-              <h6>{{ category.name }}</h6>
-              <ul class="item-detail-list">
-                <li v-for="item in category.items" :key="`${item.name}-${item.quantity ?? 'single'}`">
-                  <span>{{ item.name }}</span>
-                  <strong v-if="item.quantity">×{{ item.quantity }}</strong>
-                </li>
-              </ul>
-            </section>
-          </div>
-        </section>
+        <details :key="current.id" class="membership-detailed-disclosure">
+          <summary>查看完整礼包物品清单</summary>
+          <section class="membership-detailed-items" aria-label="详细物品">
+            <h5>详细物品</h5>
+            <div class="membership-inventory-grid">
+              <section v-for="category in detailedCategories" :key="category.name" class="membership-inventory-category">
+                <h6>{{ category.name }}</h6>
+                <ul class="item-detail-list">
+                  <li v-for="item in category.items" :key="`${item.name}-${item.quantity ?? 'single'}`">
+                    <span>{{ item.name }}</span>
+                    <strong v-if="item.quantity">×{{ item.quantity }}</strong>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </section>
+        </details>
       </section>
     </div>
   </article>
 </template>
+
+<style scoped>
+.membership-detailed-disclosure {
+  margin-top: 28px;
+}
+
+.membership-detailed-disclosure > summary {
+  display: flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 18px;
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 12px;
+  color: var(--package-tier-color, var(--champagne, #e4b863));
+  background: rgba(255, 255, 255, .035);
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+  transition: background-color .2s ease, border-color .2s ease;
+}
+
+.membership-detailed-disclosure > summary::-webkit-details-marker,
+.membership-detailed-disclosure > summary::marker {
+  display: none;
+  content: "";
+}
+
+.membership-detailed-disclosure > summary::after {
+  content: "+";
+  font-size: 20px;
+  line-height: 1;
+}
+
+.membership-detailed-disclosure[open] > summary::after {
+  content: "−";
+}
+
+.membership-detailed-disclosure > summary:hover {
+  border-color: var(--package-tier-color, var(--champagne, #e4b863));
+  background: rgba(255, 255, 255, .06);
+}
+
+.membership-detailed-disclosure > summary:focus-visible {
+  outline: 2px solid var(--package-tier-color, var(--champagne, #e4b863));
+  outline-offset: 3px;
+}
+
+.membership-detailed-disclosure > .membership-detailed-items {
+  margin-top: 22px;
+}
+</style>
